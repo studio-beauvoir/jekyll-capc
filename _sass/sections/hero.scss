@@ -1,0 +1,313 @@
+@import url(../var.scss);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    background: var(--b1);
+    color: var(--p1);
+}
+
+img {
+    border-radius: 30px;
+}
+
+h1 {
+    font:var(--h1);
+}
+
+h2 {
+    font:var(--h2);
+}
+
+h3 {
+    font:var(--h3);
+}
+
+h4 {
+    font:var(--h4);
+}
+
+h5 {
+    font: var(--h5);
+}
+
+p {
+    font:var(--p);
+}
+
+/*________section TITRE_________*/
+.title_landing {
+    padding-top: 2rem;
+    padding-left: 9.375rem;
+}
+
+.main_title {
+    color:var(--s1);;
+}
+
+.main_subtitle {
+    padding: 4% 0 10% 0;
+    width: 55%;
+}
+
+.description {
+    line-height: 1.4;
+}
+
+.graphic_element_intro {
+    position: absolute;
+    right: 5%;
+    top:35em;
+    z-index: 1;
+}
+
+.graphic_element_event{
+    position: absolute;
+    left: 10%;
+    top: 68em;
+    z-index: 1;
+}
+
+/* ligne rouge sous titre */
+em {
+    position: relative;
+    font-style: normal;
+}
+
+em::before{
+    position: absolute;
+    content:" ";
+    top:0.8em;
+    left:-0.3em;
+    width: 100%;
+    height: 40%;
+    background:var(--t2);
+    mix-blend-mode: multiply;
+}
+
+/*________section MAIN EVENT blue_________*/
+
+.main_blue_back {
+    margin-top: 20rem;
+    padding-bottom: 25rem;
+    background: var(--s1);
+    color: var(--b1);
+    position: relative;
+}
+
+.main_event {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.main_event_title {
+    position: absolute;
+    top:10%;
+    left:7%;
+}
+
+.main_event_txt {
+    position: absolute;
+    bottom:15%;
+    left:7%;
+}
+
+.gradient {
+    display: flex;
+    width:71.125rem;
+    height:37rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2)), url("http://placekitten.com/1138/592");
+    background-size: cover;
+    background-position: center;
+    transition: 200ms linear;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+.main_event:hover .gradient {
+    transform: scale(1.2);
+}
+
+.plus_details {
+    opacity: 0;
+    position: absolute;
+    bottom:8%;
+    right:7%;
+    transition: 200ms linear;
+}
+
+.main_event:hover .plus_details {
+    opacity: 1;
+}
+
+svg {
+    vertical-align:-10%;
+}
+
+/*________Evenements en cours BLUE________*/
+
+.event_blue {
+    background: var(--s1);
+    color: var(--b1);
+    height: 35em;
+}
+
+.en_cours {
+    margin-left: 9.375rem;
+    /* padding-top: 15rem; */
+    padding-bottom: 1rem;
+}
+
+.en_cours_title {
+    padding-bottom: 3rem;
+}
+
+/*____________FILTERS____________*/
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 9.375rem;
+    padding-bottom: 1rem;
+}
+
+.filterrow1, .filterrow2 {
+    display: flex;
+    flex: 1 0 100%;
+}
+
+.filter {
+    padding: 0.5rem 0.5rem 0 0;
+}
+
+/*_________CARROUSEL__________*/
+
+.carrousel {
+    padding-top: 3em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left:9.375rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    height: auto;
+}
+
+.grid_maybe {
+    display: grid;
+}
+
+.item {
+    position: relative;
+    align-content: center;
+    grid-row: 1;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 18.75rem;
+    z-index: 1;
+}
+
+.item::before {
+    opacity: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    transition: 200ms linear;
+    z-index:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-image: url("http://placekitten.com/400/300");
+    background-size:cover;
+    transition: 200ms linear;
+    z-index:-1;
+}
+
+/* Hover sur les images des évènements */
+
+
+.item:hover::after{
+    transform: scale(1.2);
+}
+
+.item:hover::before{
+    opacity: 1  ;
+}
+
+/* TEXTE SUR ELEMENTS FILTRES */
+
+.item_text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    opacity: 0;
+    transition: 200ms linear;
+    /* border: 5px red solid; */
+    position: absolute;
+    top:5%;
+    height:280px;
+}
+
+.item_text h4{
+    color:var(--s3);
+    margin:3% 0 8% 0 ; 
+    width: 50%;
+}
+
+.mm_ligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 0 5% 0;
+}
+
+.item:hover .item_text {
+    opacity: 1;
+}
+
+/* scroll_bar */
+.carrousel::-webkit-scrollbar {
+    height: 0.7rem;
+  } 
+
+.carrousel::-webkit-scrollbar-track { 
+    background: var(--s3);
+    border-radius: 10px;
+}
+
+.carrousel::-webkit-scrollbar-thumb { 
+    background: var(--t1);
+    border-radius: 10px;
+}
+
+.carrousel::-webkit-scrollbar-thumb:hover { 
+    background:var(--t2);
+}   
+
+/* fond blanc fin */
+
+.white {
+    background:var(--b1);
+    height: 20rem;
+}
