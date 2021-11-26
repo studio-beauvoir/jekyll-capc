@@ -1,0 +1,114 @@
+/* 
+    Chargement des fonts  
+    - Roboto: bold, regular, thin
+    - Roboto Slab: bold
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;500&display=swap');
+
+
+
+
+
+/*  ----------------------------------
+    Couleurs
+    
+    Pensez à ajouter la ligne suivante dans la balise html
+    data-theme="light" 
+    --------------------------------- */
+    
+/* pour le <html data-theme="light"> */
+html[data-theme="light"] {
+    --p1: #171717;
+    --p2: #494949;
+    --p3: #8F8F8F;
+    
+    --s1: #3451B2;
+    --s2: #5F80ED;
+    --s3: #D9E2FC;
+    
+    --t1: #CA3214;
+    --t2: #E54D2E;
+    --t3: #F3B0A2;
+    
+    --b1: #F8F8F8;
+    --b2: #F2F2F0;
+    --b3: #E8E8E2;
+}
+
+/* pour le <html data-theme="dark"> */
+html[data-theme="dark"] {
+    --p1: #F2F2F0;
+    --p2: #D9D9D7;
+    --p3: #737372;
+    
+    --s1: #849DFF;
+    --s2: #60A5FA;
+    --s3: #2563EB;
+    
+    --t1: #FECACA;
+    --t2: #F87171;
+    --t3: #DC2626;
+    
+    --b1: #151617;
+    --b2: #27292C;
+    --b3: #393B41;
+}
+
+
+/* 
+    Breakpoints 
+    c'est la largeur d'écran
+    récupéré depuis https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    on peut pas s'en servir pour les media c'est dommage
+*/
+html {
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+}
+
+/* 
+    Fonts mobile (max md)
+    exemple d'utilisation :
+        .h1 {
+            font: var(--h1);
+        }
+*/
+@media screen and (max-width: 768px) {
+    html {
+        /* titres */
+        --h1: 700 1.875rem  "Roboto Slab", serif;
+        --h2: 500 1.563rem  "Roboto", sans-serif;
+        --h3: 500 1.25rem  "Roboto", sans-serif;
+        --h4: 500 1.25rem  "Roboto", sans-serif;
+        --h5: 500 1.25rem  "Roboto", sans-serif;
+        
+        /* contenu */
+        --p: 400 1.25rem  "Roboto", sans-serif;
+        --label: 300 1.25rem  "Roboto", sans-serif;
+    }
+}
+
+/* 
+    Fonts pc (min md)
+    exemple d'utilisation :
+        .h1 {
+            font: var(--h1);
+        }
+*/
+@media screen and (min-width: 768px) {
+    html {
+        /* titres */
+        --h1: 700 4.375rem  "Roboto Slab", serif;
+        --h2: 700 3.75rem  "Roboto Slab", serif;
+        --h3: 500 3.75rem  "Roboto", sans-serif;
+        --h4: 500 1.563rem  "Roboto", sans-serif;
+        --h5: 500 1.25rem  "Roboto", sans-serif;
+        
+        /* contenu */
+        --p: 400 1.25rem  "Roboto", sans-serif;
+        --label: 300 1.25rem  "Roboto", sans-serif;
+    }
+}
