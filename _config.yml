@@ -50,23 +50,3 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-plugins:
-  - jekyll-assets
-gems:
-  - jekyll-paginate
-  - jekyll-assets
-assets:
-  compress:
-    css:  sass
-    js:   uglifier
-  autoprefixer:
-    browsers:
-        - "last 5 versions"
-        - "IE > 9"
-  digest: true
-  assets:
-    - "*.scss"
-  sources:
-    - "_assets/folder"
-  plugins:
-    css: { autoprefixer: {}}
