@@ -1,3 +1,63 @@
 ---
 ---
 @import "vendors/bootstrap";
+
+$theme-colors: map-remove($theme-colors, "primary", "secondary", "dark");
+
+$light-theme-colors: (
+    "p-1": #171717,
+    "p-2": #494949,
+    "p-3": #8F8F8F,
+    
+    "s-1": #3451B2,
+    "s-2": #5F80ED,
+    "s-3": #D9E2FC,
+    
+    "t-1": #CA3214,
+    "t-2": #E54D2E,
+    "t-3": #F3B0A2,
+    
+    "b-1": #F8F8F8,
+    "b-2": #F2F2F0,
+    "b-3": #E8E8E2
+);
+
+$dark-theme-colors: (
+    "p-1": #F2F2F0,
+    "p-2": #D9D9D7,
+    "p-3": #737372,
+    
+    "s-1": #849DFF,
+    "s-2": #60A5FA,
+    "s-3": #2563EB,
+    
+    "t-1": #FECACA,
+    "t-2": #F87171,
+    "t-3": #DC2626,
+    
+    "b-1": #151617,
+    "b-2": #27292C,
+    "b-3": #393B41
+);
+
+$themes: (
+    'light': $light-theme-colors,
+    'dark': $dark-theme-colors,
+);
+
+// Merge the maps
+
+
+@each $themeName, $themeColors in $themes {
+    html[data-theme="#{$themeName}"] {
+        @each $colorName, $color in $themeColors {
+            .bg-#{$colorName}{
+                background-color: $color !important;
+            }
+            
+            .text-#{$colorName}{
+                color: $color !important;
+            }
+        }
+    }
+}
