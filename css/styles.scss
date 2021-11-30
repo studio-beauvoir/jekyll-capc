@@ -9,3 +9,10 @@
     margin:0;
     padding: 0;
 }
+
+html[data-theme="dark"] .hidden-dark-mode {
+    display: none;
+}
+html[data-theme="light"] .hidden-light-mode {
+    display: none;
+}
