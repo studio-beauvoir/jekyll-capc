@@ -1,14 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-}
-
-html, body {
-    background: var(--b1);
-    color: var(--p1);
-}
-
 #hero {
     img {
         border-radius: 30px;

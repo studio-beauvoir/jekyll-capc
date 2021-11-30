@@ -5,65 +5,64 @@ ______________________________________________________________*/
 @import url(./var.css);
 @import url(./master.css);
 
-html, body{
-    margin: 0;
-}
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
-    margin: 0;
-}
-p{
-    margin:0;
-    font-weight: 400;
-}
-h2{
-    padding-right: 2.5rem;
-}
-h4{
-    padding-bottom: 1.25rem;
-}
-p .label{
-    font-weight: 300;
-}
-.section{
-    padding: 3.125rem 9.375rem 3.125rem 9.375rem;
-}
+#section_intro_event {
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        margin: 0;
+    }
+    p{
+        margin:0;
+        font-weight: 400;
+    }
+    h2{
+        padding-right: 2.5rem;
+    }
+    h4{
+        padding-bottom: 1.25rem;
+    }
+    p .label{
+        font-weight: 300;
+    }
+    .section{
+        padding: 3.125rem 9.375rem 3.125rem 9.375rem;
+    }
 
-/* ______________________________________________________________
-                        SPECIFIQUES
-______________________________________________________________*/
-/* ______________________________________________________________
-                            HERO
-______________________________________________________________*/
+    /* ______________________________________________________________
+                            SPECIFIQUES
+    ______________________________________________________________*/
+    /* ______________________________________________________________
+                                HERO
+    ______________________________________________________________*/
 
-.hero{
-    background:linear-gradient(90deg, #000000c7 40%, rgba(0,0,0,0)), url(../assets/img/584.jpg);;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 40vh;
-}
+    .hero{
+        background:linear-gradient(90deg, #000000c7 40%, rgba(0,0,0,0)), url(../assets/img/584.jpg);;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40vh;
+    }
 
-.hero h1, .hero h2,.hero h3,.hero h4, .hero h5, .hero h6 {
-    color: var(--b1);
-}
+    .hero h1, .hero h2,.hero h3,.hero h4, .hero h5, .hero h6 {
+        color: var(--b1);
+    }
 
-.little-title{
-    display: flex;
-    align-items: center;
-    color: white;
-}
+    .little-title{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
 
-.t1{
-    border:inset 2px white;
-    border-radius: 0.625rem;
-    padding: 0.938rem 1.563rem 0.938rem 1.563rem;
-}
+    .t1{
+        border:inset 2px white;
+        border-radius: 0.625rem;
+        padding: 0.938rem 1.563rem 0.938rem 1.563rem;
+    }
 
-.main-title{
-    display: flex;
-    flex-direction:column-reverse;
-    color: white;
+    .main-title{
+        display: flex;
+        flex-direction:column-reverse;
+        color: white;
+    }
 }

@@ -3,279 +3,279 @@
                             GENERAL
 ______________________________________________________________*/
 
-html, body{
-    margin: 0;
-}
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
-    margin: 0;
-}
-p{
-    margin:0;
-    font-weight: 400;
-}
-h2{
-    padding-right: 2.5rem;
-}
-h4{
-    padding-bottom: 1.25rem;
-}
-p .label{
-    font-weight: 300;
-}
-.section-prochainement{
-    padding: 3.125rem 9.375rem 3.125rem 9.375rem;
-}
 
-/* ______________________________________________________________
-
-                        SPECIFIQUES
-______________________________________________________________*/
-/* ______________________________________________________________
-
-                            HERO
-______________________________________________________________*/
-
-.hero{
-    background:linear-gradient(90deg, #000000c7 40%, rgba(0,0,0,0)), url(../assets/img/584.jpg);;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 40vh;
-}
-
-.hero h1, .hero h2,.hero h3,.hero h4, .hero h5, .hero h6 {
-    color: var(--b1);
-}
-
-.little-title{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.t1{
-    border:inset 2px white;
-    border-radius: 0.625rem;
-    padding: 0.938rem 1.563rem 0.938rem 1.563rem;
-}
-
-.main-title{
-    display: flex;
-    flex-direction:column-reverse;
-    color: white;
-}
-
-/* ______________________________________________________________
-
-                           MAIN-CONTENT
-______________________________________________________________*/
-
-.section-1{
-    --br: 1.563rem;
-    border-radius: var(--br) var(--br) 0rem 0rem;
-    background-color:var(--b1) ;
-    margin-top: calc( -1*var(--br));
-}
-
-.section-1 h4, .section-1 p {
-    color: var(--p2);
-}
-
-.section-1 h1, .section-1 h2 {
-    color: var(--s1);
-}
-
-.section-1 h5{
-    color: var(--b1);
-}
-
-.title-section-1{
-    text-align:start;
-    padding-bottom: 1.875rem;
-}
-
-.part{
-    display: flex;
-    padding: 1.25rem 0rem 1.25rem 0rem;
-}
-
-.part-1, .part-3{
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rapport{
-    width: 50%;
-}
-
-.tarif{
-    padding: 1.25rem 2.813rem 1.25rem 2.813rem;
-    align-items: center;
-    background-color: var(--p2);
-    border-radius: 0.938rem;
-}
-
-.image-content{
-    border-radius: 1.25rem;
+#prochainement {
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+        margin: 0;
+    }
+    p{
+        margin:0;
+        font-weight: 400;
+    }
+    h2{
+        padding-right: 2.5rem;
+    }
+    h4{
+        padding-bottom: 1.25rem;
+    }
+    p .label{
+        font-weight: 300;
+    }
+    .section-prochainement{
+        padding: 3.125rem 9.375rem 3.125rem 9.375rem;
     }
 
     /* ______________________________________________________________
 
-                           SECTION BIO
-______________________________________________________________*/
+                            SPECIFIQUES
+    ______________________________________________________________*/
+    /* ______________________________________________________________
 
-.carre-bleu{
-    width: 100%;
-    height: 800px;
-    background-color: var(--s1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+                                HERO
+    ______________________________________________________________*/
 
-.texte{
-    width: 40%;
-    height: 500px;
-    margin-left: 50px;
-    font-size: 120%; 
-    background-color: var(--s1);
-    color: var(--b1);
-}
+    .hero{
+        background:linear-gradient(90deg, #000000c7 40%, rgba(0,0,0,0)), url(../assets/img/584.jpg);;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40vh;
+    }
 
-.image > img{
-    border-radius: 30px;
-    width: fit-content;
-    height: fit-content;
-    width: 500px;
-    margin-right: 50px;
-    margin-top: 11rem;
-}
+    .hero h1, .hero h2,.hero h3,.hero h4, .hero h5, .hero h6 {
+        color: var(--b1);
+    }
 
-.image > .rae_bouton{
-    width: 31rem;
-    height: 3rem;
-    border-radius: 15px;
-    background-color:var(--b3);
-    color:var(--s1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7.5rem;
-}
+    .little-title{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
 
-.rae_bouton > a{
-    color:var(--s1);
-    text-decoration: none;
-}
+    .t1{
+        border:inset 2px white;
+        border-radius: 0.625rem;
+        padding: 0.938rem 1.563rem 0.938rem 1.563rem;
+    }
 
-.rae_bouton > a:visited{
-    color:var(--s2);
-}
-
-.rae_bouton > svg{
-    margin-left: 1rem;
-}
-
-.bio{
-    margin-bottom: 90px;
-}
-
-.auteur{
-    margin-bottom: 40px;
-}
-
-.competences{
-    margin-bottom: 40px;
-}
-
-.section-2{
-    padding: 0;
-}
-
-.section-3{
-    padding: 0;
-}
+    .main-title{
+        display: flex;
+        flex-direction:column-reverse;
+        color: white;
+    }
 
     /* ______________________________________________________________
 
-                           SECTION INFO-PATRICK
-______________________________________________________________*/
+                            MAIN-CONTENT
+    ______________________________________________________________*/
 
-.ip_top_page{
-    display:flex;
-    justify-content: space-evenly;
-    background-color: var(--b1);
-}
+    .section-1{
+        --br: 1.563rem;
+        border-radius: var(--br) var(--br) 0rem 0rem;
+        background-color:var(--b1) ;
+        margin-top: calc( -1*var(--br));
+    }
 
-.nothing{
-    width: 420px;
-}
+    .section-1 h4, .section-1 p {
+        color: var(--p2);
+    }
 
-.ip_titre{
-    padding-top: 6rem;
-    margin-left: -2rem;
-    padding-bottom: 3rem;
-    color: var(--s1);
-    background-color: var(--b1);
-}
+    .section-1 h1, .section-1 h2 {
+        color: var(--s1);
+    }
 
-.ip_texte > h5{
-    color: #5F80ED;
-    margin-bottom: 0.3rem;
-}
+    .section-1 h5{
+        color: var(--b1);
+    }
 
-.ip_texte > p{
-    margin-bottom: 0.6rem;
-}
+    .title-section-1{
+        text-align:start;
+        padding-bottom: 1.875rem;
+    }
 
-.ip_texte{
-    margin-bottom: 2rem;
-}
+    .part{
+        display: flex;
+        padding: 1.25rem 0rem 1.25rem 0rem;
+    }
 
-.ip{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--b1);
-    color:var(--p1);
-}
+    .part-1, .part-3{
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.ip_acces > h5{
-    color:var(--s2);
-}
+    .rapport{
+        width: 50%;
+    }
 
-.ip_bouton{
-    width: 17rem;
-    height: 3rem;
-    background-color:var(--s3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
+    .tarif{
+        padding: 1.25rem 2.813rem 1.25rem 2.813rem;
+        align-items: center;
+        background-color: var(--p2);
+        border-radius: 0.938rem;
+    }
 
-.ip_bouton > a{
-    color:var(--p2);
-    text-decoration: none;;
-}
+    .image-content{
+        border-radius: 1.25rem;
+        }
 
-.ip_bouton > a:visited{
-    color:var(--p2);
-}
+        /* ______________________________________________________________
 
-.ip_bouton > svg{
-    margin-left: 1rem;
-    color:var(--p2);
-}
+                            SECTION BIO
+    ______________________________________________________________*/
 
-.ip_plan_acces > img{
-    border-radius: 30px;
-    margin-bottom: 1rem;
+    .carre-bleu{
+        width: 100%;
+        height: 800px;
+        background-color: var(--s1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-}
+    .texte{
+        width: 40%;
+        height: 500px;
+        margin-left: 50px;
+        font-size: 120%; 
+        background-color: var(--s1);
+        color: var(--b1);
+    }
 
-.ip_partie_gauche{
-    margin-bottom: 8rem;
+    .image > img{
+        border-radius: 30px;
+        width: fit-content;
+        height: fit-content;
+        width: 500px;
+        margin-right: 50px;
+        margin-top: 11rem;
+    }
+
+    .image > .rae_bouton{
+        width: 31rem;
+        height: 3rem;
+        border-radius: 15px;
+        background-color:var(--b3);
+        color:var(--s1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.5rem;
+    }
+
+    .rae_bouton > a{
+        color:var(--s1);
+        text-decoration: none;
+    }
+
+    .rae_bouton > a:visited{
+        color:var(--s2);
+    }
+
+    .rae_bouton > svg{
+        margin-left: 1rem;
+    }
+
+    .bio{
+        margin-bottom: 90px;
+    }
+
+    .auteur{
+        margin-bottom: 40px;
+    }
+
+    .competences{
+        margin-bottom: 40px;
+    }
+
+    .section-2{
+        padding: 0;
+    }
+
+    .section-3{
+        padding: 0;
+    }
+
+        /* ______________________________________________________________
+
+                            SECTION INFO-PATRICK
+    ______________________________________________________________*/
+
+    .ip_top_page{
+        display:flex;
+        justify-content: space-evenly;
+        background-color: var(--b1);
+    }
+
+    .nothing{
+        width: 420px;
+    }
+
+    .ip_titre{
+        padding-top: 6rem;
+        margin-left: -2rem;
+        padding-bottom: 3rem;
+        color: var(--s1);
+        background-color: var(--b1);
+    }
+
+    .ip_texte > h5{
+        color: #5F80ED;
+        margin-bottom: 0.3rem;
+    }
+
+    .ip_texte > p{
+        margin-bottom: 0.6rem;
+    }
+
+    .ip_texte{
+        margin-bottom: 2rem;
+    }
+
+    .ip{
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--b1);
+        color:var(--p1);
+    }
+
+    .ip_acces > h5{
+        color:var(--s2);
+    }
+
+    .ip_bouton{
+        width: 17rem;
+        height: 3rem;
+        background-color:var(--s3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .ip_bouton > a{
+        color:var(--p2);
+        text-decoration: none;;
+    }
+
+    .ip_bouton > a:visited{
+        color:var(--p2);
+    }
+
+    .ip_bouton > svg{
+        margin-left: 1rem;
+        color:var(--p2);
+    }
+
+    .ip_plan_acces > img{
+        border-radius: 30px;
+        margin-bottom: 1rem;
+
+    }
+
+    .ip_partie_gauche{
+        margin-bottom: 8rem;
+    }
 }
