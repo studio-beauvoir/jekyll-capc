@@ -1,71 +1,73 @@
-.carre-bleu{
-    width: 100%;
-    height: 800px;
-    background-color: var(--s1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+#bio{
+    .carre-bleu{
+        width: 100%;
+        height: 800px;
+        background-color: var(--s1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.texte{
-    width: 40%;
-    height: 500px;
-    margin-left: 50px;
-    font-size: 120%; 
-    background-color: var(--s1);
-    color: var(--b1);
-}
+    .texte{
+        width: 40%;
+        height: 500px;
+        margin-left: 50px;
+        font-size: 120%; 
+        background-color: var(--s1);
+        color: var(--b1);
+    }
 
-.image > img{
-    border-radius: 30px;
-    width: fit-content;
-    height: fit-content;
-    width: 500px;
-    margin-right: 50px;
-    margin-top: 11rem;
-}
+    .image > img{
+        border-radius: 30px;
+        width: fit-content;
+        height: fit-content;
+        width: 500px;
+        margin-right: 50px;
+        margin-top: 11rem;
+    }
 
-.image > .rae_bouton{
-    width: 31rem;
-    height: 3rem;
-    border-radius: 15px;
-    background-color:var(--b3);
-    color:var(--s1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7.5rem;
-}
+    .image > .rae_bouton{
+        width: 31rem;
+        height: 3rem;
+        border-radius: 15px;
+        background-color:var(--b3);
+        color:var(--s1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.5rem;
+    }
 
-.rae_bouton > a{
-    color:var(--s1);
-    text-decoration: none;
-}
+    .rae_bouton > a{
+        color:var(--s1);
+        text-decoration: none;
+    }
 
-.rae_bouton > a:visited{
-    color:var(--s2);
-}
+    .rae_bouton > a:visited{
+        color:var(--s2);
+    }
 
-.rae_bouton > svg{
-    margin-left: 1rem;
-}
+    .rae_bouton > svg{
+        margin-left: 1rem;
+    }
 
-.bio{
-    margin-bottom: 90px;
-}
+    .bio{
+        margin-bottom: 90px;
+    }
 
-.auteur{
-    margin-bottom: 40px;
-}
+    .auteur{
+        margin-bottom: 40px;
+    }
 
-.competences{
-    margin-bottom: 40px;
-}
+    .competences{
+        margin-bottom: 40px;
+    }
 
-.section-2{
-    padding: 0;
-}
+    .section-2{
+        padding: 0;
+    }
 
-.section-3{
-    padding: 0;
+    .section-3{
+        padding: 0;
+    }
 }

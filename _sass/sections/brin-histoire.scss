@@ -1,114 +1,116 @@
 /*Toutes les section brin d'histoire, pas le titre h2*/
-.brin{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    /*border: 5px red dotted;*/
-    border-left: 3px solid;
-    border-left-color: var(--s1);
-    margin:0 10.5% 5% 10.5%;
-    /* margin-bottom: 5%; */
-    padding: 0 10.5%; 
-    position: relative;
-}   
+#brin-histoire{
+    .brin{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        /*border: 5px red dotted;*/
+        border-left: 3px solid;
+        border-left-color: var(--s1);
+        margin:0 10.5% 5% 10.5%;
+        /* margin-bottom: 5%; */
+        padding: 0 10.5%; 
+        position: relative;
+    }   
 
-/*Titres h4 des parties Un brin d'histoire*/
-.brin h4{
-    margin: 0 -5px;
-}
+    /*Titres h4 des parties Un brin d'histoire*/
+    .brin h4{
+        margin: 0 -5px;
+    }
 
-h2{
-    font:var(--h2);
-    color:var(--s1);
-    margin-left: 9.2%;
-}
+    h2{
+        font:var(--h2);
+        color:var(--s1);
+        margin-left: 9.2%;
+    }
 
-h4{
-    font:var(--h4);
-    color:var(--s2);
-}
+    h4{
+        font:var(--h4);
+        color:var(--s2);
+    }
 
-p{
-    font:var(--p);
-    color:var(--p1);
-}
+    p{
+        font:var(--p);
+        color:var(--p1);
+    }
 
-/*Partie histoire avec texte + images + deco*/
-.histoire{
-    display:flex;
-    flex-direction: row;
-    align-content:space-around;
-    /*border: 2px blue solid;*/
+    /*Partie histoire avec texte + images + deco*/
+    .histoire{
+        display:flex;
+        flex-direction: row;
+        align-content:space-around;
+        /*border: 2px blue solid;*/
 
-}
+    }
 
-/*Partie environnement avec texte + image*/
-.environnement{
-    display:flex;
-    flex-direction: row;
-    align-content:space-around;
-    /*border: 2px blue solid;*/
-}
+    /*Partie environnement avec texte + image*/
+    .environnement{
+        display:flex;
+        flex-direction: row;
+        align-content:space-around;
+        /*border: 2px blue solid;*/
+    }
 
-/*Partie collection avec texte + image + deco*/
-.collection{
-    display:flex;
-    flex-direction: row;
-    align-content:space-around;
-    /*border: 2px blue solid;*/
-}
+    /*Partie collection avec texte + image + deco*/
+    .collection{
+        display:flex;
+        flex-direction: row;
+        align-content:space-around;
+        /*border: 2px blue solid;*/
+    }
 
-/*Les 3 parties, comprenant texte + images + les 2 decos*/
-.histoire, .environnement, .collection{
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0;
-    align-items: center;
-}
+    /*Les 3 parties, comprenant texte + images + les 2 decos*/
+    .histoire, .environnement, .collection{
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 0;
+        align-items: center;
+    }
 
-/*Les 3 textes*/
-.texte_histoire, .texte_environnement, .texte_collection{
-    display:flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    max-width: 40%;
-    /*border: 2px purple solid;*/
-}
+    /*Les 3 textes*/
+    .texte_histoire, .texte_environnement, .texte_collection{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        max-width: 40%;
+        /*border: 2px purple solid;*/
+    }
 
-.texte_histoire{
-    margin: 0 2% 0 0;
-}
+    .texte_histoire{
+        margin: 0 2% 0 0;
+    }
 
-.texte_environnement{
-    margin: 0 0 0 2%;
-}
-.texte_collection{
-    margin: 0 2% 0 0;
-}
+    .texte_environnement{
+        margin: 0 0 0 2%;
+    }
+    .texte_collection{
+        margin: 0 2% 0 0;
+    }
 
-/*Toutes les images de la section Un brin d'histoire*/
-.brin img{
-    position: relative;
-    border-radius: 30px;
-    width: 460px; 
-    height: 220px;
-}
+    /*Toutes les images de la section Un brin d'histoire*/
+    .brin img{
+        position: relative;
+        border-radius: 30px;
+        width: 460px; 
+        height: 220px;
+    }
 
-/*Images + deco de la partie histoire*/
-.assets_histoire{
-    position: relative;
-}
+    /*Images + deco de la partie histoire*/
+    .assets_histoire{
+        position: relative;
+    }
 
-.deco_histoire{
-    position: absolute;
-    top: -80px; left: 370px;
-    z-index: -1;
-}
+    .deco_histoire{
+        position: absolute;
+        top: -80px; left: 370px;
+        z-index: -1;
+    }
 
-.deco_collection{
-    position: absolute;
-    top: 55%; left: 41%;
-    z-index: -1;
+    .deco_collection{
+        position: absolute;
+        top: 55%; left: 41%;
+        z-index: -1;
+    }
 }
