@@ -9,24 +9,26 @@ html, body {
     color: var(--p1);
 }
 
+
+#en-cours {
 img {
     border-radius: 30px;
 }
 
 h1 {
-    font:var(--h1);
+    font: var(--h1);
 }
 
 h2 {
-    font:var(--h2);
+    font: var(--h2);
 }
 
 h3 {
-    font:var(--h3);
+    font: var(--h3);
 }
 
 h4 {
-    font:var(--h4);
+    font: var(--h4);
 }
 
 h5 {
@@ -34,7 +36,8 @@ h5 {
 }
 
 p {
-    font:var(--p);
+    font: var(--p);
+    color: white;
 }
 
 /*________section TITRE_________*/
@@ -165,6 +168,7 @@ svg {
 
 .en_cours_title {
     padding-bottom: 3rem;
+    color: white;
 }
 
 /*____________FILTERS____________*/
@@ -230,8 +234,8 @@ svg {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.item:after {
-    position: absolute;
+.item::after {
+    // position: absolute;
     content: " ";
     width: 100%;
     height: 100%;
@@ -256,27 +260,28 @@ svg {
 
 .item_text {
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
+    // flex-direction: column;
+    justify-content: space-around;
     opacity: 0;
     transition: 200ms linear;
-    /* border: 5px red solid; */
+    border: 5px red solid;
     position: absolute;
-    top:5%;
-    height:280px;
+    // top:5%;
+    height:fit-content;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .item_text h4{
     color:var(--s3);
-    margin:3% 0 8% 0 ; 
+    // margin:3% 0 8% 0 ; 
     width: 50%;
 }
 
 .mm_ligne {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10% 0 5% 0;
+    // justify-content: space-around;
+    margin: 1.5rem 0;
 }
 
 .item:hover .item_text {
@@ -307,4 +312,5 @@ svg {
 .white {
     background:var(--b1);
     height: 20rem;
+}
 }
