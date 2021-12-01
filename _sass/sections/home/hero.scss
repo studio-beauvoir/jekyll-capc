@@ -20,6 +20,11 @@
 
     .heroUne {
         margin-bottom: -18rem;
+
+        @media screen and (max-width:768px) {
+            margin-bottom: -7rem;
+        }
+
         position: relative;
 
         .heroUne_textTop {
