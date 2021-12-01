@@ -1,8 +1,10 @@
 #bio{
     .bouton{
         border-radius: 15px;
+        margin-bottom: -1.5rem;
         display: flex;
-        padding: 0.4rem;
+        height: 3rem;
+        color: var(--s1);
     }
     
     .Bio-top{
@@ -24,5 +26,19 @@
     .img-top > img{
         margin-top: 8.125rem;
         border-radius: 25px;
+        margin-bottom: 6.75rem;
+    }
+
+    .bouton > svg{
+        margin-left: 1rem;
+    }
+
+    .bouton> a{
+        text-decoration: none;
+    }
+    
+    .bouton > a:visited{
+        color: var(--s1);
+        text-decoration: none;
     }
 }
