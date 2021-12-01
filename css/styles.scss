@@ -16,6 +16,9 @@ html[data-theme="dark"] .hidden-dark-mode {
 html[data-theme="light"] .hidden-light-mode {
     display: none;
 }
+:root {
+    font-size: calc(8px + 0.4vw);
+}
 
 h1 {
     font: var(--h1);

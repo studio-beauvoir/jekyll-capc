@@ -93,15 +93,15 @@ $utilities: map-merge(
                 
                 .#{$stateClass}border-#{$colorName}#{$stateSelector} { border-color: $color !important }
             }
-        }
 
-        @each $colorName, $color in $themeColors {
-            .#{$stateClass}bg-#{$colorName}--#{$themeName}Theme#{$stateSelector} { background-color: $color !important }
 
-            .#{$stateClass}text-#{$colorName}--#{$themeName}Theme#{$stateSelector} { color: $color !important }
+            @each $colorName, $color in $themeColors {
+                .#{$stateClass}bg-#{$colorName}--#{$themeName}Theme#{$stateSelector} { background-color: $color !important }
 
-            .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important }
-
+                .#{$stateClass}text-#{$colorName}--#{$themeName}Theme#{$stateSelector} { color: $color !important }
+        
+                .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important }
+            }
         }
     }
 }
