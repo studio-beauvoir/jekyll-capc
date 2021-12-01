@@ -1,7 +1,10 @@
 #hero {
     .bg-blue {
         padding-top: 10rem;
-        list-style: none;
+    }
+
+    ul {
+        list-style-type: none;
     }
 
     .hero_une {
@@ -24,6 +27,11 @@
 
     .hero_enCours {
         padding-top: 10rem;
+
+        .filters {
+            display: flex;
+            justify-content: space-around;
+        }
     }
     
 }
