@@ -19,36 +19,35 @@
     }
 
     .heroUne {
+        position: relative;
         margin-bottom: -18rem;
 
         @media screen and (max-width:768px) {
             margin-bottom: -7rem;
         }
 
-        position: relative;
-
-        .heroUne_textTop {
-            position:absolute;
-            top: 0;
-        }
-        .heroUne_textBottom {
-            position: absolute;
-            bottom: 0;
-        }
-
         .heroUne {
-            transition: 200ms linear;   
         }
 
-        .heroUne_img:before {
-            position: absolute;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2));
-        }
-    }
-    
-    .heroUne:hover {
         .heroUne_img {
-            transform: scale(1.2);
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            position: absolute;
+            transition: 200ms linear;   
+            &:before {
+                position: absolute;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2));
+            }
+        }
+        &:hover {
+            .heroUne_img {
+                transform: scale(1.1);
+            }
+        }
+
+        .heroUne_text {
+            z-index: 10;
         }
     }
 
