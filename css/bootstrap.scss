@@ -52,11 +52,11 @@ $themes: (
     html[data-theme="#{$themeName}"] {
         @each $colorName, $color in $themeColors {
             .bg-#{$colorName}{
-                background-color: $color !important;
+                background-color: $color;
             }
             
             .text-#{$colorName}{
-                color: $color !important;
+                color: $color;
             }
         }
     }
