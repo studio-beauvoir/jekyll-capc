@@ -2,6 +2,10 @@
     .enCours {
         padding-top: 30rem;
 
+        @media screen and (max-width:768px) {
+            padding-top: 10rem;
+        }
+
         li {
             border-radius: 0.625rem;
 
