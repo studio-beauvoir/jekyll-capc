@@ -1,7 +1,6 @@
 ---
 ---
-@import "vendors/bootstrap";
-
+$theme-colors: () !default;
 $theme-colors: map-remove($theme-colors, "primary", "secondary", "dark");
 
 $light-theme-colors: (
@@ -46,19 +45,47 @@ $themes: (
 );
 
 // Merge the maps
+$border-radius-sm: 0.625rem; // 10px
+$border-radius: 0.938rem; // 15px
+$border-radius-lg: 1.25rem; // 20px
+$border-radius-xl: 1.875rem; // 30px
 
+$utilities: () !default;
+$utilities: map-merge(
+    $utilities,
+    (
+        "rounded": (
+            property: border-radius,
+            class: rounded,
+            values: (
+                null: $border-radius,
+                0: 0,
+                1: $border-radius-sm,
+                2: $border-radius,
+                3: $border-radius-lg,
+                4: $border-radius-xl,
+                circle: 50%,
+            ),
+            responsive: true
+        )
+    )
+);
+
+
+@import "vendors/bootstrap";
 
 @each $themeName, $themeColors in $themes {
     html[data-theme="#{$themeName}"] {
         @each $colorName, $color in $themeColors {
-            .bg-#{$colorName}{
-                background-color: $color;
-            }
-            
-            .text-#{$colorName}{
-                color: $color;
-            }
+            .bg-#{$colorName} { background-color: $color }
+            .text-#{$colorName} { color: $color }
+            .border-#{$colorName} { border-color: $color !important }
         }
     }
-}
 
+    @each $colorName, $color in $themeColors {
+        .bg-#{$colorName}--noTheme { background-color: $color }
+        .text-#{$colorName}--noTheme { color: $color }
+        .border-#{$colorName}--noTheme { border-color: $color !important }
+    }
+}

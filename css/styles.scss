@@ -40,11 +40,3 @@ p {
 label {
     font: var(--label);
 }
-
-.border_radius {
-    border-radius: 1.875rem;
-    @media screen and (max-width:768px) {
-        border-radius: 1.25rem;
-    }
-}
-
