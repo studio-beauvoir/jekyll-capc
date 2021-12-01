@@ -9,7 +9,7 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarheader">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programme
                         </a>
@@ -32,11 +32,11 @@
                     <li class="nav-item">
                         {% include components/themeBtn.html %}
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {% include components/searchBtn.html %}
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="programDropdownMenuLink">
+                        <div class="dropdown-menu border-0 bg-b-2 " aria-labelledby="programDropdownMenuLink">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
