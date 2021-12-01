@@ -1,2 +1,15 @@
 #hero {
+    .hero_une {
+        position: relative;
+        
+        .hero_uneTexteTop {
+            position:absolute;
+            top: 0;
+        }
+        .hero_uneTexteBottom {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    
 }
