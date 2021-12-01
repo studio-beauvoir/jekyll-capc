@@ -1,5 +1,65 @@
-<section class="container-fluid" id="enCours">
+<section class="container-fluid p-0 bg-s-1 text-b-1" id="enCours">
+
+    <div class="container hero_enCours"> <!-- En cours avec filtres-->
+        <h2>Évènements en cours</h2>
+        <h5>Filtrer par type d’évènement</h5>
+
+        <ul class="justify-content-between flex-wrap d-flex">
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">    
+                {% include components/icons/stack.html %} 
+                <p>Tout</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/panel.html %} 
+                <p>Expositions</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/directions.html %} 
+                <p>Visites</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/man.html %} 
+                <p>Jeune Public</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/masks.html %} 
+                <p>Performances</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/tableconf.html %} 
+                <p>Conférences</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/men.html %} 
+                <p>Rencontres</p>
+            </li>
+            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                {% include components/icons/scroll.html %} 
+                <p>Workshops</p>
+            </li>
+        </ul>
+    </div>
+
     <div class="container">
-        
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col-4">
+                <div class="card">
+                <img src="../../../assets/img/club-poisson-lune.png" class="card-img-top" alt="Club du Poisson Lune">
+                <div class="card-img-overlay card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

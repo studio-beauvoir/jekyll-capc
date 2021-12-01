@@ -1,96 +1,31 @@
-<section class="container-fluid p-0" id="hero">
+<section class="container-fluid" id="hero">
 
-    <div class="container"> <!-- Introduction-->
-        <h1 class="text-center text-md-start text-s-1">Musée<br/><em class="fst-normal position-relative">d'art contemporain</em><br/> de Bordeaux</h1>
-        <div class="col-6">
-            <p class="text-start d-none d-md-block text-p-1">Situé dans le centre-ville de Bordeaux, le CAPC musée d’art contemporain est un établissement phare de la région 
-                bordelaise, avec ses 1600 pièces signées par plus de 200 artistes du monde entier.</p>
+    <div class="container pt-5 pb-5"> <!-- Introduction-->
+        <h1 class="text-center text-md-start text-s-1 pt-2 lh-1">Musée<br/><em class="fst-normal position-relative">d'art contemporain</em><br/> de Bordeaux</h1>
+        <div class="col-7 pt-2">
+            <p class="pt-5 pb-5 text-start d-none d-md-block text-p-1 lh-base">Situé dans le centre-ville de Bordeaux, le CAPC musée d’art contemporain rassemble 1600 pièces signées par plus de 200 artistes du monde entier.
+            Cet établissement phare de la région bordelaise  offre une passerelle entre les expériences esthétiques de la fin du siècle dernier et les questionnements des artistes d'aujourd'hui.
+            </p>
         </div>
     </div>
 
     <div class="container"> <!--Exposition à la Une-->
         <div class="row justify-content-center"> 
-            <div class="hero_une col-10">
-                <div class="hero_uneText text-b-1 ps-5">
-                    <div class="hero_uneTextTop pt-5">
+            <div class="heroUne col-10">
+                <div class="heroUne_text text-b-1 ps-5">
+                    <div class="heroUne_textTop pt-5">
                         <h2>Exposition à la une</h2>
                     </div>
-                    <div class="hero_uneTextBottom pb-5">
+                    <div class="heroUne_textBottom pb-4">
                         <h5>4.11.2021 → 26.03.2022</h5>
                         <h2>OLU OGUNNAIKE</h2>
                         <h4>Miettes</h4>
                     </div>
                 </div>
-                <img src="../../../assets/img/image_hero.jpg" alt="Exposition à la Une" class="hero_uneImg border_radius img-fluid">
+                <img src="/assets/img/image_hero.jpg" alt="Exposition à la Une" class="hero_uneImg border_radius img-fluid">
             </div>  
         </div>
     </div>
-
-    <section class="bg-s-1 text-b-1">
-
-        <div class="container hero_enCours"> <!-- En cours avec filtres-->
-            <h2>Évènements en cours</h2>
-            <h5>Filtrer par type d’évènement</h5>
-    
-            <ul class="justify-content-between flex-wrap d-flex">
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">    
-                    {% include components/icons/stack.html %} 
-                    <p>Tout</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/panel.html %} 
-                    <p>Expositions</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/directions.html %} 
-                    <p>Visites</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/man.html %} 
-                    <p>Jeune Public</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/masks.html %} 
-                    <p>Performances</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/tableconf.html %} 
-                    <p>Conférences</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/men.html %} 
-                    <p>Rencontres</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/scroll.html %} 
-                    <p>Workshops</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col-4">
-                    <div class="card">
-                    <img src="../../../assets/img/club-poisson-lune.png" class="card-img-top" alt="Club du Poisson Lune">
-                    <div class="card-img-overlay card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 </section>
