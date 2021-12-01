@@ -1,26 +1,60 @@
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarheader" aria-controls="navbarheader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo/logo-light.png" height="24">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarheader">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programme
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Expositions</a></li>
+                            <li><a class="dropdown-item" href="#">Visites</a></li>
+                            <li><a class="dropdown-item" href="#">Rencontres</a></li>
+                            <li><a class="dropdown-item" href="#">Conférences</a></li>
+                            <li><a class="dropdown-item" href="#">Jeune public</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link text-s-1" href="#">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link text-s-1" href="#">Musée</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        {% include components/themeBtn.html %}
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {% include components/searchBtn.html %}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="programDropdownMenuLink">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn">FR</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn">ENG</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn">SP</span>
+                    </li>
+                </ul>
+                
+                
             </div>
         </div>
     </nav>
