@@ -23,10 +23,21 @@
         position:relative;
     }
 
-    .histoire_logo{
+    .histoire_deco{
         position: absolute;
         top: -4.375rem;
         right: -3.75rem;
+        z-index: -1;
+    }
+
+    .img_collection_relative{
+        position: relative;
+    }
+
+    .collection_deco{
+        position: absolute;
+        top: -5rem;
+        left: -2rem;
         z-index: -1;
     }
 }

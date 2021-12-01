@@ -1,5 +1,5 @@
 #enCours {
-    .hero_enCours {
+    .enCours {
         padding-top: 30rem;
 
         li {
@@ -11,4 +11,32 @@
             }
         }
     }
+
+    .enCoursFiltres::-webkit-scrollbar {
+        display: none;
+    }      
+
+    .enCoursCarrousel {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .enCoursCarrousel::-webkit-scrollbar {
+        height: 0.7rem;
+      } 
+    
+    .enCoursCarrousel::-webkit-scrollbar-track { 
+        background: var(--s3);
+        border-radius: 10px;
+    }
+    
+    .enCoursCarrousel::-webkit-scrollbar-thumb { 
+        background: var(--t1);
+        border-radius: 10px;
+    }
+    
+    .enCoursCarrousel::-webkit-scrollbar-thumb:hover { 
+        background:var(--t2);
+    }   
+
 }
