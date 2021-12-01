@@ -1,5 +1,5 @@
 <header id="header">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="sticky-top navbar navbar-expand-md navbar-light bg-b-2 border-bottom border-2 border-s-1">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarheader" aria-controls="navbarheader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,11 +9,11 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarheader">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programme
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="programDropdownMenuLink">
+                        <ul class="dropdown-menu border-0 bg-b-2 rounded-0 rounded-bottom" aria-labelledby="programDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Expositions</a></li>
                             <li><a class="dropdown-item" href="#">Visites</a></li>
                             <li><a class="dropdown-item" href="#">Rencontres</a></li>
@@ -32,11 +32,11 @@
                     <li class="nav-item">
                         {% include components/themeBtn.html %}
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {% include components/searchBtn.html %}
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="programDropdownMenuLink">
+                        <div class="dropdown-menu border-0 bg-b-2 " aria-labelledby="programDropdownMenuLink">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -53,9 +53,7 @@
                         <span class="btn">SP</span>
                     </li>
                 </ul>
-                
-                
             </div>
         </div>
     </nav>
-</header>
+</header>   

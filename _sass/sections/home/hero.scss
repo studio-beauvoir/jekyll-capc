@@ -1,20 +1,50 @@
 #hero {
-    .hero_une {
-        position: relative;
-        
-        .hero_uneTexte {
-            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.8));
-        }
+    .bg-blue {
+        padding-top: 10rem;
+    }
 
-        .hero_uneTexteTop {
+    ul {
+        list-style-type: none;
+    }
+    
+    em::before{ //underline red
+        position: absolute;
+        content:" ";
+        top:0.8em;
+        left:-0.3em;
+        width: 100%;
+        height: 40%;
+        background:var(--t2);
+        mix-blend-mode: multiply;
+    }
+
+    .heroUne {
+        margin-bottom: -18rem;
+        position: relative;
+
+        .heroUne_textTop {
             position:absolute;
             top: 0;
         }
-        .hero_uneTexteBottom {
+        .heroUne_textBottom {
             position: absolute;
             bottom: 0;
         }
 
+        .heroUne {
+            transition: 200ms linear;   
+        }
+
+        .heroUne_img:before {
+            position: absolute;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2));
+        }
     }
     
+    .heroUne:hover {
+        .heroUne_img {
+            transform: scale(1.2);
+        }
+    }
+
 }
