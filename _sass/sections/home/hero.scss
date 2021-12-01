@@ -1,2 +1,20 @@
 #hero {
+    .hero_une {
+        position: relative;
+        
+        .hero_uneTexte {
+            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+        }
+
+        .hero_uneTexteTop {
+            position:absolute;
+            top: 0;
+        }
+        .hero_uneTexteBottom {
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+    
 }
