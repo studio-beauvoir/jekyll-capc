@@ -27,6 +27,36 @@
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;
+        position: relative;
+
+        .enCoursCarrousel_card {
+            position: relative;
+            overflow:hidden;
+            margin-bottom: 3rem;
+        }
+
+        .enCours_overlay {
+            opacity:0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
+            transition: 200ms linear;
+        }
+
+        .enCoursCarrousel_cardText {
+            opacity: 0;
+            flex-direction: column;
+            z-index:10;
+            transition: 200ms linear;
+        }
+    }
+
+    .enCoursCarrousel_card:hover {
+
+        .enCoursCarrousel_cardText,
+        .enCours_overlay {
+            opacity: 1;
+        }
     }
 
     .enCoursCarrousel::-webkit-scrollbar {
