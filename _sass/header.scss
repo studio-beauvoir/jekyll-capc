@@ -1,5 +1,22 @@
 #header {
-    * {
+    border-bottom: 2px solid var(--s1);
+    span, a, .btn {
         color: var(--s1);
+    }
+
+    
+    a {
+        color: var(--s1);
+        &:hover {
+            color: var(--t1);
+        }
+    }
+    .btn {
+        &:hover {
+            color: var(--t1);
+        }
+        &.active {
+            color: var(--t2);
+        }
     }
 }
