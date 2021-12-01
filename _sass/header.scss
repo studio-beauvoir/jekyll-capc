@@ -1,21 +1,23 @@
 #header {
     // border-bottom: 2px solid var(--s1);
-    span, a, .btn {
-        color: var(--s1);
+    span, a, .btn, svg {
+        color: var(--s1) !important;
+        &:hover {
+            color: var(--t1) !important;
+        }
     }
 
-    a {
-        color: var(--s1);
-        &:hover {
-            color: var(--t1);
+}
+
+html[data-theme="dark"] {
+    #header {
+        // border-bottom: 2px solid var(--s1);
+        span, a, .btn, svg {
+            color: var(--p1) !important;
+            &:hover {
+                color: var(--s1) !important;
+            }
         }
-    }
-    .btn {
-        &:hover {
-            color: var(--t1);
-        }
-        &.active {
-            color: var(--t2);
-        }
+    
     }
 }

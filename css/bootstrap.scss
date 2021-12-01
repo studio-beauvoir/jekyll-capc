@@ -44,6 +44,14 @@ $themes: (
     'dark': $dark-theme-colors,
 );
 
+$states: (
+    '': '',
+    'hover\\:': ':hover',
+    'active\\:': ':active',
+    'focus\\:': ':focus'
+);
+
+$enable-negative-margins: true;
 // Merge the maps
 $border-radius-sm: 0.625rem; // 10px
 $border-radius: 0.938rem; // 15px
@@ -74,18 +82,26 @@ $utilities: map-merge(
 
 @import "vendors/bootstrap";
 
-@each $themeName, $themeColors in $themes {
-    html[data-theme="#{$themeName}"] {
-        @each $colorName, $color in $themeColors {
-            .bg-#{$colorName} { background-color: $color }
-            .text-#{$colorName} { color: $color }
-            .border-#{$colorName} { border-color: $color !important }
-        }
-    }
+@each $stateClass, $stateSelector in $states {
 
-    @each $colorName, $color in $themeColors {
-        .bg-#{$colorName}--noTheme { background-color: $color }
-        .text-#{$colorName}--noTheme { color: $color }
-        .border-#{$colorName}--noTheme { border-color: $color !important }
+    @each $themeName, $themeColors in $themes {
+        html[data-theme="#{$themeName}"] {
+            @each $colorName, $color in $themeColors {
+                .#{$stateClass}bg-#{$colorName}#{$stateSelector} { background-color: $color !important }
+
+                .#{$stateClass}text-#{$colorName}#{$stateSelector} { color: $color !important }
+                
+                .#{$stateClass}border-#{$colorName}#{$stateSelector} { border-color: $color !important }
+            }
+        }
+
+        @each $colorName, $color in $themeColors {
+            .#{$stateClass}bg-#{$colorName}--#{$themeName}Theme#{$stateSelector} { background-color: $color !important }
+
+            .#{$stateClass}text-#{$colorName}--#{$themeName}Theme#{$stateSelector} { color: $color !important }
+
+            .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important }
+
+        }
     }
 }
