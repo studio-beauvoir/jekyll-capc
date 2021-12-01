@@ -1,6 +1,14 @@
 #enCours {
-    .hero_enCours {
+    .enCours {
         padding-top: 30rem;
+
+        @media screen and (max-width:768px) {
+            padding-top: 12rem;
+        }
+
+        @media screen and (min-width:769px) and (max-width:1200px) {
+            padding-top: 20rem;
+        }
 
         li {
             border-radius: 0.625rem;
@@ -11,4 +19,32 @@
             }
         }
     }
+
+    .enCoursFiltres::-webkit-scrollbar {
+        display: none;
+    }      
+
+    .enCoursCarrousel {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .enCoursCarrousel::-webkit-scrollbar {
+        height: 0.7rem;
+      } 
+    
+    .enCoursCarrousel::-webkit-scrollbar-track { 
+        background: var(--s3);
+        border-radius: 10px;
+    }
+    
+    .enCoursCarrousel::-webkit-scrollbar-thumb { 
+        background: var(--t1);
+        border-radius: 10px;
+    }
+    
+    .enCoursCarrousel::-webkit-scrollbar-thumb:hover { 
+        background:var(--t2);
+    }   
+
 }
