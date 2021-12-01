@@ -16,3 +16,27 @@ html[data-theme="dark"] .hidden-dark-mode {
 html[data-theme="light"] .hidden-light-mode {
     display: none;
 }
+
+h1 {
+    font: var(--h1);
+}
+h2 {
+    font: var(--h2);
+}
+h3 {
+    font: var(--h3);
+}
+h4 {
+    font: var(--h4);
+}
+h5 {
+    font: var(--h5);
+}
+
+p {
+    font: var(--p);
+}
+
+label {
+    font: var(--label);
+}
