@@ -1,22 +1,32 @@
 #brinHistoire{
     
-.kiki{margin:20px}
+    .kiki{margin:20px}
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles pour cette Media Queries */
-.kiki{margin:10px}
-
-}
-}
-
-.mobile_margin_top{
-    @media only screen and (max-width:768px){
-        margin-top: 5%;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        /* Styles pour cette Media Queries */
+        .kiki{margin:10px}
     }
-}
 
-.mobile_margin_bottom{
-    @media only screen and (max-width:768px){
-        margin-bottom: 5%
+    .mobile_margin_top{
+        @media only screen and (max-width:991px){
+            margin-top: 5%;
+        }
+    }
+
+    .mobile_margin_bottom{
+        @media only screen and (max-width:991px){
+            margin-bottom: 5%
+        }
+    }
+
+    .img_histoire_relative{
+        position:relative;
+    }
+
+    .histoire_logo{
+        position: absolute;
+        top: -4.375rem;
+        right: -3.75rem;
+        z-index: -1;
     }
 }
