@@ -1,20 +1,29 @@
 #hero {
+    .bg-blue {
+        padding-top: 10rem;
+        list-style: none;
+    }
+
     .hero_une {
+        margin-bottom: -7rem;
         position: relative;
-        
-        .hero_uneTexte {
-            background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+
+        .hero_uneText {
+            background: linear-gradient(90deg, rgba(black, 1), rgba(black, 1));
         }
 
-        .hero_uneTexteTop {
+        .hero_uneTextTop {
             position:absolute;
             top: 0;
         }
-        .hero_uneTexteBottom {
+        .hero_uneTextBottom {
             position: absolute;
             bottom: 0;
         }
+    }
 
+    .hero_enCours {
+        padding-top: 10rem;
     }
     
 }
