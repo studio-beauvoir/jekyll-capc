@@ -1,13 +1,13 @@
 #enCours {
     .enCours {
-        padding-top: 30rem;
+        padding-top: 15rem;
 
         @include media-breakpoint-down(md) {
-            padding-top: 12rem;
+            padding-top: 8rem;
         }
 
         @include media-breakpoint-between(md, xl) {
-            padding-top: 20rem;
+            padding-top: 12rem;
         }
 
         li {
@@ -20,7 +20,7 @@
         }
 
         .bottom_card {
-            
+            bottom: 0 !important;
         }
     }
 
