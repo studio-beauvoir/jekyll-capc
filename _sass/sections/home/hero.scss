@@ -27,7 +27,7 @@
             content: " ";
             top: 50%;
             left: 50%;
-            height: 51%;
+            height: 52%; // un peu d'overlap pour éviter la fine ligne 
             width: 200%;
             transform: translateX(-50%);
             z-index: -1;
