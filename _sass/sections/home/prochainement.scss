@@ -6,7 +6,7 @@
     }
 
     .margin_mobile_top{
-        @include media-breakpoint-only(md){
+        @media only screen and (max-width:991px){
             margin-top: 5%;
         }
     }
