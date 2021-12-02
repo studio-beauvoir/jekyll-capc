@@ -1,11 +1,13 @@
 #bio{
     .bouton{
+        margin-top: 5rem;
+        margin-bottom: -2rem;
         border-radius: 15px;
-        margin-bottom: -1.5rem;
         display: flex;
         height: 4rem;
         color: var(--s1);
     }
+
     @include media-breakpoint-up(md) { 
         .Bio-top{
             margin-top: 7.25rem;
@@ -21,6 +23,10 @@
     
         .para-top{
             margin-top: 2.5rem;
+        }
+        
+        .bio-img-desktop{
+            margin-top: 7.25rem;
         }
     }
 
