@@ -1,6 +1,6 @@
-<header id="header">
-    <nav class="sticky-top top-0 navbar navbar-expand-md navbar-light bg-b-2 border-s-1 border-bottom border-2">
-        <div class="container align-center justify-center">
+<header id="header" class="sticky-top top-0">
+    <nav class=" navbar navbar-expand-md navbar-light bg-b-2 border-s-1 border-bottom border-2">
+        <div class="container align-center justify-center py-md-1">
             <!-- menuBurger: tel -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarheader" aria-controls="navbarheader" aria-expanded="false" aria-label="Toggle navigation">
                 {% include components/menu-toggler-icon.html %}
@@ -32,56 +32,65 @@
 
 
             <!-- sectionNavigation : se cache sur tel / tj affiché sur pc -->
-            <div class="collapse navbar-collapse justify-center  flex-column-reverse flex-md-row text-h1 text-md-p" id="navbarheader">
-                <ul class="navbar-nav me-auto mb-md-0 align-items-md-center">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-h1 text-md-p" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Programme
-                        </a>
-                        <ul class="dropdown-menu border-0 bg-b-2  rounded-0 rounded-bottom" aria-labelledby="programDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Expositions</a></li>
-                            <li><a class="dropdown-item" href="#">Visites</a></li>
-                            <li><a class="dropdown-item" href="#">Rencontres</a></li>
-                            <li><a class="dropdown-item" href="#">Conférences</a></li>
-                            <li><a class="dropdown-item" href="#">Jeune public</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-h1 text-md-p" href="#">Actualités</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-h1 text-md-p" href="#">Musée</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center justify-content-center flex-row">
+            <div class="collapse navbar-collapse  text-h1 text-md-p" id="navbarheader">
+                <div class="d-flex w-100 py-5 py-md-0 flew-grow-1 justify-content-between align-items-start align-items-md-center flex-column-reverse flex-md-row">
+                    <!-- subsectionLinks : plus de marge sur tel -->
+                    <ul class="navbar-nav my-2 mx-3 my-md-0 align-items-md-center">
+                        <li class="nav-item dropdown py-3 py-md-0">
+                            <a class="nav-link  dropdown-toggle text-h1 text-md-p" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programme
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-b-2  rounded-0 rounded-bottom" aria-labelledby="programDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Expositions</a></li>
+                                <li><a class="dropdown-item" href="#">Visites</a></li>
+                                <li><a class="dropdown-item" href="#">Rencontres</a></li>
+                                <li><a class="dropdown-item" href="#">Conférences</a></li>
+                                <li><a class="dropdown-item" href="#">Jeune public</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item py-3 py-md-0">
+                            <a class="nav-link text-h1 text-md-p" href="#">Actualités</a>
+                        </li>
+                        <li class="nav-item py-3 py-md-0">
+                            <a class="nav-link text-h1 text-md-p" href="#">Musée</a>
+                        </li>
+                    </ul>
+                    <!-- fin subsectionLinks -->
 
-                    <!-- subsectionActions : caché sur mobile -->
-                    <li class="nav-item d-none d-md-block">
-                        {% include components/themeBtn.html %}
-                    </li>
-                    <li class="nav-item d-none d-md-block dropstart">
-                        <a class="" href="#" id="programDropdownMenuLink" role="button" aria-expanded="false">
-                            {% include components/searchBtn.html %}
-                        </a>
-                        <div class="dropdown-menu border-0 bg-b-2 " aria-labelledby="programDropdownMenuLink">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </li>
-                    <!-- fin subsectionActions -->
+                    <!-- subsectionOther -->
+                    <ul class="navbar-nav my-3 mx-2 my-md-0 align-items-center justify-content-center flex-row">
 
-                    <li class="nav-item">
-                        <span class="btn">FR</span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="btn">ENG</span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="btn">SP</span>
-                    </li>
-                </ul>
+                        <!-- subsectionActions : caché sur mobile -->
+                        <li class="nav-item d-none d-md-block">
+                            {% include components/themeBtn.html %}
+                        </li>
+                        <li class="nav-item d-none d-md-block dropstart">
+                            <a class="" href="#" id="programDropdownMenuLink" role="button" aria-expanded="false">
+                                {% include components/searchBtn.html %}
+                            </a>
+                            <div class="dropdown-menu border-0 bg-b-2 " aria-labelledby="programDropdownMenuLink">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </li>
+                        <!-- fin subsectionActions -->
+
+                        <li class="nav-item">
+                            <span class="btn active">FR</span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="btn">ENG</span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="btn">SP</span>
+                        </li>
+                    </ul>
+                    <!-- fin subsectionOther -->
+                </div>
+                
+
             </div>
             <!-- fin sectionNavigation -->
 
