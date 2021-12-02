@@ -1,15 +1,15 @@
-<div class="cardIncoming col-12 col-md-6 col-xl-6 margin_mobile_top">
+<div class="cardIncoming col-12 col-md-6 col-xl-6 margin_mobile_top {{include.border}}">
     <div class="cardIncomingInner d-flex justify-content-between align-items-center">
         <div class="d-flex img_prochainement {{include.class}}">
-            <img class="img-fluid rounded-20" src="{{include.src}}" alt="Photographie exposition LSF Le tour du jour en 80 mondes">
+            <img class="img-fluid rounded-20" src="{{include.src}}" alt="{{include.alt}}">
         </div>
 
         <div class="d-flex flex-column mw-auto mx-2">
             <div class="d-flex justify-content-between">
-                <h5 class="mb-3">{{ include.type }}</h5>
+                <h5 class="mb-3 text-p-2">{{ include.type }}</h5>
                 <p class="m-0">{{ include.day }}</p>
             </div>
-            <h5>{{include.title}}</h5>
+            <h4 class="texte-s-1">{{include.title}}</h4>
             <p class="m-0">{{include.description}}</p>
         </div>
     </div>
