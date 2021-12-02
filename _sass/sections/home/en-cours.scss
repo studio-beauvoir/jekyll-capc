@@ -1,5 +1,7 @@
 #enCours {
+
     .enCours {
+        position: relative;
         padding-top: 15rem;
 
         @include media-breakpoint-down(md) {
@@ -18,15 +20,27 @@
                 margin-bottom: 0;
             }
         }
-
-        .bottom_card {
-            bottom: 0 !important;
-        }
     }
 
     .enCoursFiltres::-webkit-scrollbar {
         display: none;
-    }      
+    } 
+    
+    .enCoursCarrouselContainer {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: " ";
+            bottom: 50%;
+            left: 50%;
+            height: 50%;
+            width: 200%;
+            transform: translateX(-50%);
+            z-index: -1;
+            background: var(--s1);
+        }
+    }
 
     .enCoursCarrousel {
         overflow-x: scroll;
@@ -41,7 +55,7 @@
             grid-row: 1;
             margin-right: 2rem;
         }
-        
+
         .enCours_overlay {
             opacity:0;
             background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
