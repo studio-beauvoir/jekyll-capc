@@ -95,13 +95,6 @@ $utilities: map-merge(
                 "p": var(--p),
                 "label": var(--label)
             )
-        ),
-
-        "border": (
-            property: border-width,
-            responsive: true,
-            class: border,
-            values: $borders-custom-width
         )
     )
 );
@@ -135,7 +128,6 @@ $utilities: map-merge(
         }
     }
 }
-
 
 
 $spacerDirections: (
