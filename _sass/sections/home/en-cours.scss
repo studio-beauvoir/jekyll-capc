@@ -34,10 +34,10 @@
             content: " ";
             bottom: 50%;
             left: 50%;
-            height: 50%;
+            height: 51%; // un peu d'overlap pour éviter la fine ligne 
             width: 200%;
             transform: translateX(-50%);
-            z-index: -1;
+            z-index: -10;
             background: var(--s-1);
         }
     }
@@ -48,36 +48,68 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
 
-        .enCoursCarrousel_card {
+        .incomingCard {
+            user-select: none;
+            cursor: pointer;
             margin-bottom: 3rem;
-            width: 30rem;
+            width: 25rem;
             height: auto;
             grid-row: 1;
-            margin-right: 2rem;
+            transition: transform .1s;
+            @include media-breakpoint-down(md) {
+                width: 80vw;
+                height: 95vw;
+            }
+
+            .incomingCard_overlay {
+                z-index: -1;
+                @include media-breakpoint-down(md) {
+                    background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+                }
+                @include media-breakpoint-up(md) {
+                    opacity:0;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
+                }
+                transition: 200ms linear;
+            }
+            .incomingCard_img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -2;
+                transition: transform .2s;
+            }
+    
+            .incomingCard_text {
+                @include media-breakpoint-up(md) {
+                    opacity: 0;
+                }
+                transition: .2s linear;
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+
+            &:hover {
+                .incomingCard_text, .incomingCard_overlay {
+                    opacity: 1;
+                }
+                .incomingCard_img {
+                    @include media-breakpoint-up(md) {
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
 
-        .enCours_overlay {
-            opacity:0;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
-            transition: 200ms linear;
-        }
-
-        .enCoursCarrousel_cardText {
-            opacity: 0;
-            flex-direction: column;
-            z-index:10;
-            transition: 200ms linear;
-        }
+       
     }
     
 
-    .enCoursCarrousel_card:hover {
-
-        .enCoursCarrousel_cardText,
-        .enCours_overlay {
-            opacity: 1;
-        }
-    }
+   
 
     .enCoursCarrousel::-webkit-scrollbar {
         height: 0.7rem;

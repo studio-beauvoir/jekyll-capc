@@ -150,11 +150,11 @@ $spacerTypes: (
         }
 
         .#{$spacerTypeName}-container-p { // x: left & right
-            #{$spacerTypeProp}-left: $container-padding-x;
-            #{$spacerTypeProp}-right: $container-padding-x;
+            #{$spacerTypeProp}-left: $container-padding-x * 2;
+            #{$spacerTypeProp}-right: $container-padding-x * 2;
         }
         .#{$spacerTypeName}#{$spacerDirName}-container-p {
-            #{$spacerTypeProp}#{$spacerDirProp}: $container-padding-x;
+            #{$spacerTypeProp}#{$spacerDirProp}: $container-padding-x * 2;
         }
 
         @each $containerBreakpoint, $containerWidth in $container-max-widths {
@@ -169,11 +169,11 @@ $spacerTypes: (
                 }
     
                 .#{$spacerTypeName}-container-p { // x: left & right
-                    #{$spacerTypeProp}-left: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
-                    #{$spacerTypeProp}-right: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
+                    #{$spacerTypeProp}-left: calc( (100vw - #{$containerWidth}) / 2);
+                    #{$spacerTypeProp}-right: calc( (100vw - #{$containerWidth}) / 2);
                 }
                 .#{$spacerTypeName}#{$spacerDirName}-container-p {
-                    #{$spacerTypeProp}#{$spacerDirProp}: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
+                    #{$spacerTypeProp}#{$spacerDirProp}: calc( (100vw - #{$containerWidth}) / 2);
                 }
             }
             
