@@ -1,5 +1,3 @@
----
----
 $theme-colors: () !default;
 $theme-colors: map-remove($theme-colors, "primary", "secondary", "dark");
 

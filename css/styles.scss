@@ -20,26 +20,12 @@ html[data-theme="light"] .hidden-light-mode {
     font-size: calc(8px + 0.4vw);
 }
 
-h1 {
-    font: var(--h1);
-}
-h2 {
-    font: var(--h2);
-}
-h3 {
-    font: var(--h3);
-}
-h4 {
-    font: var(--h4);
-}
-h5 {
-    font: var(--h5);
-}
-
-p {
-    font: var(--p);
-}
-
-label {
-    font: var(--label);
-}
+// exemple d'utilisation:
+// <h1>...</h1> (le mieux nv seo) ou <span class="text-h1">...</span> (moins ouf nv seo)
+h1, .text-h1 { font: var(--h1) }
+h2, .text-h2 { font: var(--h2) }
+h3, .text-h3 { font: var(--h3) }
+h4, .text-h4 { font: var(--h4) }
+h5, .text-h5 { font: var(--h5) }
+p, .text-p { font: var(--p) }
+label, .text-label { font: var(--label) }
