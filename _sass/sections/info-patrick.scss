@@ -1,5 +1,16 @@
 #infoPatrick {
 
+    .position-relative{
+        position:relative;
+    }
+
+    .deco-infos{
+        position:absolute;
+        bottom:-40%;
+        right:-70%;
+        z-index:-1;
+    }
+
     .bouton{
         border-radius: 15px;
         display: flex;
