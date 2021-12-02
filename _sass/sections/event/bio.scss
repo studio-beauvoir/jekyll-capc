@@ -5,7 +5,7 @@
         border-radius: 15px;
         display: flex;
         height: 3.5rem;
-        color: var(--s1);
+        color: var(--s-1);
     }
 
     @include media-breakpoint-up(md) { 
@@ -72,7 +72,7 @@
     }
     
     .bouton > a:visited{
-        color: var(--s1);
+        color: var(--s-1);
         text-decoration: none;
     }
 }

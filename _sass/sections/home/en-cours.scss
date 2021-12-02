@@ -38,7 +38,7 @@
             width: 200%;
             transform: translateX(-50%);
             z-index: -1;
-            background: var(--s1);
+            background: var(--s-1);
         }
     }
 
@@ -84,17 +84,17 @@
       } 
     
     .enCoursCarrousel::-webkit-scrollbar-track { 
-        background: var(--s3);
-        border-radius: 10px;
+        background: var(--s-3);
+        // border-radius: 10px;
     }
     
     .enCoursCarrousel::-webkit-scrollbar-thumb { 
-        background: var(--t1);
-        border-radius: 10px;
+        background: var(--t-1);
+        // border-radius: 10px;
     }
     
     .enCoursCarrousel::-webkit-scrollbar-thumb:hover { 
-        background:var(--t2);
+        background:var(--t-2);
     }   
 
 }

@@ -1,9 +1,9 @@
 #header {
-    // border-bottom: 2px solid var(--s1);
+    // border-bottom: 2px solid var(--s-1);
     span, a, .btn, svg {
-        color: var(--s1) !important;
+        color: var(--s-1) !important;
         &:hover {
-            color: var(--t1) !important;
+            color: var(--t-1) !important;
         }
     }
 
@@ -11,11 +11,11 @@
 
 html[data-theme="dark"] {
     #header {
-        // border-bottom: 2px solid var(--s1);
+        // border-bottom: 2px solid var(--s-1);
         span, a, .btn, svg {
-            color: var(--p1) !important;
+            color: var(--p-1) !important;
             &:hover {
-                color: var(--s1) !important;
+                color: var(--s-1) !important;
             }
         }
     

@@ -16,43 +16,47 @@
     data-theme="light" 
     --------------------------------- */
     
+    
 /* pour le <html data-theme="light"> */
-html[data-theme="light"] {
-    --p1: #171717;
-    --p2: #494949;
-    --p3: #8F8F8F;
+// html[data-theme="light"] {
+//     --p1: #171717;
+//     --p2: #494949;
+//     --p3: #8F8F8F;
     
-    --s1: #3451B2;
-    --s2: #5F80ED;
-    --s3: #D9E2FC;
+//     --s1: #3451B2;
+//     --s2: #5F80ED;
+//     --s3: #D9E2FC;
     
-    --t1: #CA3214;
-    --t2: #E54D2E;
-    --t3: #F3B0A2;
+//     --t1: #CA3214;
+//     --t2: #E54D2E;
+//     --t3: #F3B0A2;
     
-    --b1: #F8F8F8;
-    --b2: #F2F2F0;
-    --b3: #E8E8E2;
-}
+//     --b1: #F8F8F8;
+//     --b2: #F2F2F0;
+//     --b3: #E8E8E2;
+// }
+
+            
+
 
 /* pour le <html data-theme="dark"> */
-html[data-theme="dark"] {
-    --p1: #F2F2F0;
-    --p2: #D9D9D7;
-    --p3: #737372;
+// html[data-theme="dark"] {
+//     --p1: #F2F2F0;
+//     --p2: #D9D9D7;
+//     --p3: #737372;
     
-    --s1: #849DFF;
-    --s2: #60A5FA;
-    --s3: #2563EB;
+//     --s1: #ADBEFF;
+//     --s2: #5B79C6;
+//     --s3: #335297;
     
-    --t1: #FECACA;
-    --t2: #F87171;
-    --t3: #DC2626;
+//     --t1: #FECACA;
+//     --t2: #F87171;
+//     --t3: #DC2626;
     
-    --b1: #151617;
-    --b2: #27292C;
-    --b3: #393B41;
-}
+//     --b1: #151617;
+//     --b2: #27292C;
+//     --b3: #393B41;
+// }
 
 /* 
     Fonts mobile (max md)

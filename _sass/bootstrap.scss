@@ -24,9 +24,9 @@ $dark-theme-colors: (
     "p-2": #D9D9D7,
     "p-3": #737372,
     
-    "s-1": #849DFF,
-    "s-2": #60A5FA,
-    "s-3": #2563EB,
+    "s-1": #ADBEFF,
+    "s-2": #5B79C6,
+    "s-3": #335297,
     
     "t-1": #FECACA,
     "t-2": #F87171,
@@ -94,6 +94,7 @@ $utilities: map-merge(
 
 
 @import "vendors/bootstrap";
+@import "var";
 
 
 // theme text-color, background-color, border-color...
@@ -176,6 +177,20 @@ $spacerTypes: (
                 }
             }
             
+        }
+    }
+}
+
+
+@each $themeName, $themeColors in $themes {
+    html[data-theme="#{$themeName}"] {
+        @each $colorName, $color in $themeColors {
+            --#{$colorName}: #{$color};
+        }
+    }
+    html {
+        @each $colorName, $color in $themeColors {
+            --#{$colorName}-#{$themeName}: #{$color};
         }
     }
 }
