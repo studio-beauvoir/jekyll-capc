@@ -14,8 +14,14 @@
         }
     }
 
-    .mobile_reverse{
+    .mobile_align{
         @media only screen and (max-width:767px){
+            flex-direction: row;
+        }
+    }
+
+    .desktop_align{
+        @media only screen and (min-width:768px){
             flex-direction: row-reverse;
         }
     }
