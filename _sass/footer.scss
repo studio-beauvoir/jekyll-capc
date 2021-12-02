@@ -4,12 +4,6 @@
     }
 
     .footerPaddingBot {
-        padding-bottom: 7rem;
-    }
-
-    @include media-breakpoint-down(md) {
-        .footerPaddingBot {
-            padding-bottom: 5rem;
-        }
+        padding-bottom: 5rem;
     }
 }
