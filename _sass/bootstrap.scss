@@ -56,6 +56,13 @@ $border-radius: 0.938rem; // 15px
 $border-radius-lg: 1.25rem; // 20px
 $border-radius-xl: 1.875rem; // 30px
 
+$borders-custom-width: (
+    0:0,
+    1:1px,
+    2:2px,
+    3:3px
+);
+
 $utilities: () !default;
 $utilities: map-merge(
     $utilities,
@@ -88,6 +95,13 @@ $utilities: map-merge(
                 "p": var(--p),
                 "label": var(--label)
             )
+        ),
+
+        "border": (
+            property: border-width,
+            responsive: true,
+            class: border,
+            values: $borders-custom-width
         )
     )
 );
