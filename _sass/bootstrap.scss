@@ -73,6 +73,21 @@ $utilities: map-merge(
                 circle: 50%,
             ),
             responsive: true
+        ),
+
+        "text": (
+            property: font,
+            class: text,
+            responsive: true,
+            values: (
+                "h1": var(--h1),
+                "h2": var(--h2),
+                "h3": var(--h3),
+                "h4": var(--h4),
+                "h5": var(--h5),
+                "p": var(--p),
+                "label": var(--label)
+            )
         )
     )
 );

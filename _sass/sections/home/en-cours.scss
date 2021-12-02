@@ -1,13 +1,15 @@
 #enCours {
+
     .enCours {
-        padding-top: 30rem;
+        position: relative;
+        padding-top: 15rem;
 
         @include media-breakpoint-down(md) {
-            padding-top: 12rem;
+            padding-top: 8rem;
         }
 
         @include media-breakpoint-between(md, xl) {
-            padding-top: 20rem;
+            padding-top: 12rem;
         }
 
         li {
@@ -18,22 +20,40 @@
                 margin-bottom: 0;
             }
         }
-
-        .bottom_card {
-            
-        }
     }
 
     .enCoursFiltres::-webkit-scrollbar {
         display: none;
-    }      
+    } 
+    
+    .enCoursCarrouselContainer {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: " ";
+            bottom: 50%;
+            left: 50%;
+            height: 50%;
+            width: 200%;
+            transform: translateX(-50%);
+            z-index: -1;
+            background: var(--s1);
+        }
+    }
 
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
 
         .enCoursCarrousel_card {
             margin-bottom: 3rem;
+            width: 30rem;
+            height: auto;
+            grid-row: 1;
+            margin-right: 2rem;
         }
 
         .enCours_overlay {
@@ -49,6 +69,7 @@
             transition: 200ms linear;
         }
     }
+    
 
     .enCoursCarrousel_card:hover {
 

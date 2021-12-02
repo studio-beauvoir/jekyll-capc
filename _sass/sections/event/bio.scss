@@ -6,27 +6,59 @@
         height: 3.5rem;
         color: var(--s1);
     }
+    @include media-breakpoint-up(md) { 
+        .Bio-top{
+            margin-top: 1rem;
+        }
+        
+        .sylvanie-top{
+            margin-top: 5.5rem;
+        }
+        
+        .texte-top{
+            margin-top: 2.5rem;
+        }
     
-    .Bio-top{
-        margin-top: 7.25rem;
-    }
-    
-    .sylvanie-top{
-        margin-top: 5.5rem;
-    }
-    
-    .texte-top{
-        margin-top: 2.5rem;
+        .para-top{
+            margin-top: 2.5rem;
+        }
+
+        .img-top{
+        }
     }
 
-    .para-top{
-        margin-top: 2.5rem;
+    @include media-breakpoint-down(md) { 
+        .paragraph-bio{
+            padding: 0%;
+            margin:0%;
+        }
+
+        .bio-content{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        
+        .sylvanie-top{
+            margin-top: 1.25rem;
+        }
+        
+        .texte-top{
+            margin-top: 1.25rem;
+        }
+
+        .bio-img{
+            margin-top: 1.25rem;
+        }
+    
+        .para-top{
+            margin-top: 1.25rem;
+        }
     }
+        
+    
 
     .img-top > img{
-        margin-top: 8.125rem;
         border-radius: 25px;
-        margin-bottom: 6.75rem;
     }
 
     .bouton > svg{

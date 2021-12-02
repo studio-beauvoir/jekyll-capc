@@ -1,21 +1,108 @@
 <section class="container-fluid" id="prochainement">
     <div class="container">
-        <div class="col-12 col-md-6 col-xl-6">
-            <h2 class="text-s-1">Prochainement</h2>
-            <div class="d-flex justify-content-start">
-                <div class="d-flex w-25">
-                    <img class="img-fluid w-100" src="/assets/img/on-vend-du-vent.png" alt="Photographie exposition LSF Le tour du jour en 80 mondes">
-                </div>
-    
-                <div class="d-flex flex-column mw-auto mx-2">
-                    <div class="d-flex justify-content-between">
-                        <h5>Visite LSF</h5>
-                        <p>04.12.2021</p>
+        <h2 class="text-s-1">Prochainement</h2>
+        <div class="flex-column">
+
+            <div class="mt-5 row"> 
+                <!-- 1ère ligne -->
+                {% 
+                    include components/card_incoming.html
+                    type="Visite LSF"
+                    day="04.12.2021"
+                    title="Le tour du jour en 80 mondes"
+                    description="Visite de l'exposition avec Sylvanie Tendron, médiatrice LSF"
+                    src="/assets/img/on-vend-du-vent-google.jpg"
+                %}
+
+                {% 
+                    include components/card_incoming.html
+                    class="image-position"
+                    type="Workshop"
+                    day="08.12.2021"
+                    title="Dancehall"
+                    description="Initiation au Dancehall avec la danseuse Mwendwa"
+                    src="/assets/img/mwendwa-google.jpg"
+                %}
+
+                <!-- <div class="col-12 col-md-6 col-xl-6">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <div class="d-flex img_prochainement">
+                            <img class="img-fluid rounded-20" src="/assets/img/on-vend-du-vent-google.jpg" alt="Photographie exposition LSF Le tour du jour en 80 mondes">
+                        </div>
+            
+                        <div class="d-flex flex-column mw-auto mx-2">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-3">Visite LSF</h5>
+                                <p class="m-0">04.12.2021</p>
+                            </div>
+                            <h5>Le tour du jour en 80 mondes</h5>
+                            <p class="m-0">Visite de l'exposition avec Sylvanie Tendron, médiatrice LSF</p>
+                        </div>
                     </div>
-                    <h5>Le tour du jour en 80 mondes</h5>
-                    <p>Visite de l’exposition avec Sylvanie Tendron, médiatrice LSF</p>
+                </div> -->
+        
+                
+            </div>
+
+            <div class="mt-5 row reverseCards">
+                <!-- 2ème ligne -->
+                {% 
+                    include components/card_incoming.html
+                    type="Jeune Public"
+                    day="17.11.2021"
+                    title="Cellule Masters"
+                    description="Atelier de construction en Lego avec Vincent Sereks"
+                    src="/assets/img/cellule_master-google.jpg"
+                %}
+                
+                {% 
+                    include components/card_incoming.html
+                    type="Rencontre"
+                    day="15.12.2021"
+                    title="Louise Siffert"
+                    description="Présentation du travail de Louise Siffert par l'artiste elle-même"
+                    src="/assets/img/louise_siffert-google.jpg"
+                %}
+
+                <!-- <div class="col-12 col-md-6 col-xl-6">
+                    <div class="cardIncoming d-flex justify-content-between align-items-center">
+                        <div class="d-flex img_prochainement">
+                            <img class="img-fluid w-100 rounded-20" src="/assets/img/cellule_master-google.jpg" alt="Photographie exposition LSF Le tour du jour en 80 mondes">
+                        </div>
+            
+                        <div class="d-flex flex-column mw-auto mx-2">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-3">Jeune Public</h5>
+                                <p class="m-0">15.12.2021</p>
+                            </div>
+                            <h5>Cellule Masters</h5>
+                            <p class="m-0">Atelier de construction en Lego avec Vincent Sereks</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-xl-6 margin_mobile_top">
+                    <div class="d-flex mobile_align desktop_align justify-content-start align-items-center">
+                        <div class="d-flex img_prochainement">
+                            <img class="img-fluid w-100 rounded-20" src="/assets/img/louise_siffert-google.jpg" alt="Photographie exposition LSF Le tour du jour en 80 mondes">
+                        </div>
+            
+                        <div class="d-flex flex-column mw-auto mx-2">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-3">Rencontre</h5>
+                                <p class="m-0">15.12.2021</p> 
+                            </div>
+                            <h5>Louise Siffert</h5>
+                            <p class="m-0">Présentation du travail de Louise Siffert par l'artiste elle-même</p>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+
             </div>
         </div>
     </div>
-</section>      
+</section>

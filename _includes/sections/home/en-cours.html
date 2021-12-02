@@ -1,43 +1,46 @@
-<section class="container-fluid p-0 bg-s-1 text-b-1" id="enCours">
+<section class="container-fluid p-0 text-b-1" id="enCours">
 
-    <div class="container enCours"> <!-- En cours avec filtres-->
-        <h2>Évènements en cours</h2>
-        <h5 class="pb-2">Filtrer par type d’évènement</h5>
+    <div class="container-fluid enCours bg-s-1"> <!-- En cours avec filtres-->  
+        <div class="container">
+            <h2>Évènements en cours</h2>
+            <h5 class="pb-2">Filtrer par type d’évènement</h5>
 
-        <ul class="enCoursFiltres justify-content-between overflow-scroll d-flex gap-3 px-0 pb-4">
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">    
-                {% include components/icons/stack.html %} 
-                <p>Tout</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/panel.html %} 
-                <p>Expositions</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/directions.html %} 
-                <p>Visites</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/man.html %} 
-                <p>Jeune Public</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/masks.html %} 
-                <p>Performances</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/tableconf.html %} 
-                <p>Conférences</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/men.html %} 
-                <p>Rencontres</p>
-            </li>
-            <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                {% include components/icons/scroll.html %} 
-                <p>Workshops</p>
-            </li>
-        </ul>
+            <ul class="enCoursFiltres mb-0 justify-content-between overflow-scroll d-flex gap-3 px-0 pb-4">
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">    
+                    {% include components/icons/stack.html %} 
+                    <p>Tout</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/panel.html %} 
+                    <p>Expositions</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/directions.html %} 
+                    <p>Visites</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/man.html %} 
+                    <p>Jeune Public</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/masks.html %} 
+                    <p>Performances</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/tableconf.html %} 
+                    <p>Conférences</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/men.html %} 
+                    <p>Rencontres</p>
+                </li>
+                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
+                    {% include components/icons/scroll.html %} 
+                    <p>Workshops</p>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 
     <div class="container">

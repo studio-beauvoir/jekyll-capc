@@ -15,7 +15,13 @@
 
     .mobile_margin_bottom{
         @media only screen and (max-width:991px){
-            margin-bottom: 5%
+            margin-bottom: 5%;
+        }
+    }
+
+    .mobile_reverse{
+        @media only screen and (max-width:991px){
+            flex-direction:column-reverse;
         }
     }
 

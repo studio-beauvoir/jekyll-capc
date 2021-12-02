@@ -1,2 +1,55 @@
-<footer id="footer" class="">
+<footer class="container-fluid bg-b-3 text-s-1" id="footer">
+    <div class="container d-flex flex-column py-5">
+        <div class="align-items-start py-4">
+            {% include 
+                components/logo.html
+                height="60"
+            %}
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 order-md-4 d-flex flex-column justify-content-between">
+                <div>
+                    <h4 class="pb-2">Réseaux sociaux</h4>
+                    <div class="d-flex flex-row gap-4">
+                        {% include
+                            components/icons/facebook.html
+                        %}
+                        {% include
+                            components/icons/twitter.html
+                        %}
+                    </div>
+                </div>
+                <label class="d-none d-md-block">©2020-21 Tous droits réservés</label>
+            </div>
+            <div class="col-12 col-md-3 order-md-3">
+                <div class="d-flex flex-column">
+                    <h4>Programme</h4>
+                    <label>Expositions</label>
+                    <label>Visites</label>
+                    <label>Rencontres</label>
+                    <label>Conférences</label>
+                    <label>Jeune public</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 order-md-1">
+                <div class="d-flex flex-column">
+                    <h4>Le musée</h4>
+                    <label>Pratique</label>
+                    <label>Actualités</label>
+                    <label>Éditions</label>
+                    <label>Presse</label>
+                    <label>Partenariat</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 order-md-2">
+                <div class="d-flex flex-column">
+                    <h4>Informations</h4>
+                    <label>Mentions légales</label>
+                    <label>Plan du site</label>
+                    <label>Crédits</label>
+                    <label class="d-block d-md-none">©2020-21 Tous droits réservés</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
