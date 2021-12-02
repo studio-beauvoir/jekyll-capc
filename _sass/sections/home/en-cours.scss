@@ -41,6 +41,10 @@
             height: auto;
             grid-row: 1;
         }
+    
+        .enCoursCarrousel_img {
+            
+        }
 
         .enCours_overlay {
             opacity:0;
@@ -55,6 +59,7 @@
             transition: 200ms linear;
         }
     }
+    
 
     .enCoursCarrousel_card:hover {
 
