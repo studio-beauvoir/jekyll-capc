@@ -188,9 +188,4 @@ $spacerTypes: (
             --#{$colorName}: #{$color};
         }
     }
-    html {
-        @each $colorName, $color in $themeColors {
-            --#{$colorName}-#{$themeName}: #{$color};
-        }
-    }
 }

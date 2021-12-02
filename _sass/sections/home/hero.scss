@@ -94,3 +94,13 @@
     }
 
 }
+
+
+html[data-theme="dark"] {
+    #hero {
+        .heroUneContainer::after {
+            background: var(--s-3);
+        }
+    }
+
+}

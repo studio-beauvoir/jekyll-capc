@@ -98,3 +98,13 @@
     }   
 
 }
+
+
+html[data-theme="dark"] {
+    #enCours {
+        .enCoursCarrouselContainer::after {
+            background: var(--s-3);
+        }
+    }
+
+}

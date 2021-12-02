@@ -7,23 +7,17 @@
         .kiki{margin:10px}
     }
 
-    .mobile_margin_top{
         @media only screen and (max-width:991px){
-            margin-top: 5%;
+            .mobile_reverse{
+                flex-direction:column-reverse;
+            }
+            .mobile_margin_top{
+                margin-top: 5%;
+            }
+            // .border-0{
+            //     display:none;
+            // }
         }
-    }
-
-    .mobile_margin_bottom{
-        @media only screen and (max-width:991px){
-            margin-bottom: 5%;
-        }
-    }
-
-    .mobile_reverse{
-        @media only screen and (max-width:991px){
-            flex-direction:column-reverse;
-        }
-    }
 
     .img_histoire_relative{
         position:relative;
