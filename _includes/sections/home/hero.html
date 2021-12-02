@@ -17,13 +17,17 @@
         </div>
     </div>
 
+    <div class="heroGraphics_une d-none d-lg-block">
+        {% include 
+            components/graphic_elements/hero.html
+        %}
+    </div>
+
     <div class="container heroUneContainer"> <!--Exposition à la Une-->
         <div class="row justify-content-center"> 
             <div class="col-12">
                 <div class="heroUne rounded-30 p-5 overflow-hidden d-flex flex-column">
-                    <div class="container-fluid">
-                        <img src="/assets/img/image_hero.jpg" alt="Exposition à la Une" class="heroUne_img">
-                    </div>
+                    <img src="/assets/img/image_hero.jpg" alt="Exposition à la Une" class="heroUne_img">
                     <div class="heroUne_overlay"></div>
                     <div class="heroUne_text h-100 flex-grow-1 d-flex flex-column justify-content-between text-b-1 text-p-1--darkTheme">
                         <div class="heroUne_text_title ">
@@ -44,6 +48,11 @@
                     </div>
                 </div>  
             </div>
+        </div>
+        <div class="heroGraphics_enCours d-md-block">
+            {% include 
+                components/graphic_elements/alaune.html
+            %}
         </div>
     </div>
 

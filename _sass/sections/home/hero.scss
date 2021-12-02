@@ -41,6 +41,19 @@
         }
     }
 
+    .heroGraphics_une {
+        right:0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .heroGraphics_enCours {
+        left:0;
+        bottom: 0;
+        transform: translateY(75%);
+        position: absolute;
+    }
+
     .heroUne {
         position: relative;
         min-height: 40vw;
@@ -57,6 +70,7 @@
             position: absolute;
             background: linear-gradient(to right, rgba(0, 0, 0, 0.86) 20%, rgba(0, 0, 0, 0.1));
         }
+        
         .heroUne_img {
             display: block;
             top: 0;
@@ -66,7 +80,6 @@
             object-fit: cover;
             position: absolute;
             transition: .2s linear;   
-            
         }
 
         .heroUne_text_action {
