@@ -2,11 +2,11 @@
     .enCours {
         padding-top: 30rem;
 
-        @media screen and (max-width:768px) {
+        @include media-breakpoint-down(md) {
             padding-top: 12rem;
         }
 
-        @media screen and (min-width:769px) and (max-width:1200px) {
+        @include media-breakpoint-between(md, xl) {
             padding-top: 20rem;
         }
 
@@ -18,6 +18,10 @@
                 margin-bottom: 0;
             }
         }
+
+        .bottom_card {
+            
+        }
     }
 
     .enCoursFiltres::-webkit-scrollbar {
@@ -27,18 +31,13 @@
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;
-        position: relative;
 
         .enCoursCarrousel_card {
-            position: relative;
-            overflow:hidden;
             margin-bottom: 3rem;
         }
 
         .enCours_overlay {
             opacity:0;
-            height: 100%;
-            width: 100%;
             background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
             transition: 200ms linear;
         }
