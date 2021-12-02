@@ -42,17 +42,18 @@
     }
 
     .heroGraphics_une {
-        left:75%;
-        bottom: 0;
-        transform: translateY(15%);
+        right:0;
+        top: 0;
+        transform: translate(25%,-20%);
         position: absolute;
     }
 
     .heroGraphics_enCours {
         left:0;
         bottom: 0;
-        transform: translateY(75%);
+        transform: translate(-20%,50%);
         position: absolute;
+        z-index: 1;
     }
 
     .heroUne {
@@ -62,6 +63,7 @@
         cursor: pointer;
         transition: transform .2s;
         user-select: none;
+        z-index:2;
 
         .heroUne_overlay {
             left: 0;
