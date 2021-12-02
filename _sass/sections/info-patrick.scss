@@ -3,15 +3,11 @@
     .bouton{
         border-radius: 15px;
         display: flex;
-        height: 3.5rem;
+        height: 3rem;
     }
 
     .bouton > svg{
         margin-left: 1rem;
-    }
-
-    svg{
-        color: var(--p2);
     }
 
     .bouton> a{
@@ -19,11 +15,33 @@
     }
     
     .bouton > a:visited{
-        color: var(--s1);
         text-decoration: none;
     }
 
     .mrg{
         margin-top: 2.2rem;
+    }
+    @include media-breakpoint-up(md){
+        .bouton-mobile-color{
+            background-color: var(--s3);
+        }
+        svg{
+            color: var(--p2);
+        }
+        .texto{
+            color: var(--p2);
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .bouton-mobile-color{
+            background-color: var(--s2);
+        }
+        .texto{
+            color: var(--b1);
+        }
+        svg{
+            color: var(--b1);
+        }
     }
 }

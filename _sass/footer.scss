@@ -1,15 +1,15 @@
 #footer {
-    
-}
+    a {
+        text-decoration: none;
+    }
 
-html[data-theme="dark"] {
-    #footer {
-        span, a, .btn, svg {
-            color: var(--p1) !important;
-            &:hover {
-                color: var(--s1) !important;
-            }
+    .footerPaddingBot {
+        padding-bottom: 7rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        .footerPaddingBot {
+            padding-bottom: 5rem;
         }
-    
     }
 }
