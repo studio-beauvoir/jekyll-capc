@@ -1,3 +1,29 @@
 #infoPatrick {
 
+    .bouton{
+        border-radius: 15px;
+        display: flex;
+        height: 3.5rem;
+    }
+
+    .bouton > svg{
+        margin-left: 1rem;
+    }
+
+    svg{
+        color: var(--p2);
+    }
+
+    .bouton> a{
+        text-decoration: none;
+    }
+    
+    .bouton > a:visited{
+        color: var(--s1);
+        text-decoration: none;
+    }
+
+    .mrg{
+        margin-top: 2.2rem;
+    }
 }
