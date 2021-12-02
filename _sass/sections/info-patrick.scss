@@ -55,4 +55,15 @@
             color: var(--b-1);
         }
     }
+
+    .deco-infos{
+        position:absolute;
+        bottom: -55%;
+        right:-70%;
+        // overflow-y: hidden;
+    }
+
+    .section-infos{
+        overflow:hidden;
+    }
 }
