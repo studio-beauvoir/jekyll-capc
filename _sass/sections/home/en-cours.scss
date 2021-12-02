@@ -1,13 +1,13 @@
 #enCours {
     .enCours {
-        padding-top: 30rem;
+        padding-top: 15rem;
 
-        @media screen and (max-width:768px) {
-            padding-top: 12rem;
+        @include media-breakpoint-down(md) {
+            padding-top: 8rem;
         }
 
-        @media screen and (min-width:769px) and (max-width:1200px) {
-            padding-top: 20rem;
+        @include media-breakpoint-between(md, xl) {
+            padding-top: 12rem;
         }
 
         li {
@@ -18,6 +18,10 @@
                 margin-bottom: 0;
             }
         }
+
+        .bottom_card {
+            bottom: 0 !important;
+        }
     }
 
     .enCoursFiltres::-webkit-scrollbar {
@@ -27,18 +31,23 @@
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;
-        position: relative;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        object-fit: cover;
 
         .enCoursCarrousel_card {
-            position: relative;
-            overflow:hidden;
             margin-bottom: 3rem;
+            width: 30rem;
+            height: auto;
+            grid-row: 1;
+        }
+    
+        .enCoursCarrousel_img {
+            
         }
 
         .enCours_overlay {
             opacity:0;
-            height: 100%;
-            width: 100%;
             background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3));
             transition: 200ms linear;
         }
@@ -50,6 +59,7 @@
             transition: 200ms linear;
         }
     }
+    
 
     .enCoursCarrousel_card:hover {
 

@@ -54,21 +54,6 @@ html[data-theme="dark"] {
     --b3: #393B41;
 }
 
-
-/* 
-    Breakpoints 
-    c'est la largeur d'écran
-    récupéré depuis https://getbootstrap.com/docs/5.0/layout/breakpoints/
-    on peut pas s'en servir pour les media c'est dommage
-*/
-html {
-    --sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
-    --xxl: 1400px;
-}
-
 /* 
     Fonts mobile (max md)
     exemple d'utilisation :

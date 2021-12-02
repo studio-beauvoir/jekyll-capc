@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.fullReload": true,
+		"liveServer.settings.fullReload": false,
 		"liveServer.settings.useLocalIp": true,
 		"liveServer.settings.root": "/_site"
 	}
