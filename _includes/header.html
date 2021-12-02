@@ -8,7 +8,7 @@
             <!-- fin menuBurger -->
 
             <!-- section1 : logo sur pc/actions sur tel  -->
-            <a class="navbar-brand d-none d-md-initial" href="#">
+            <a class="navbar-brand d-none d-md-block" href="#">
                 <img class="hidden-dark-mode" src="/assets/logo/logo-light.png" height="24">
                 <img class="hidden-light-mode" src="/assets/logo/logo-dark.png" height="24">
             </a>
@@ -32,13 +32,13 @@
 
 
             <!-- sectionNavigation : se cache sur tel / tj affiché sur pc -->
-            <div class="collapse navbar-collapse justify-center  flex-column-reverse flex-md-row" id="navbarheader">
+            <div class="collapse navbar-collapse justify-center  flex-column-reverse flex-md-row text-h1 text-md-p" id="navbarheader">
                 <ul class="navbar-nav me-auto mb-md-0 align-items-md-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-h1 text-md-p" href="#" id="programDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programme
                         </a>
-                        <ul class="dropdown-menu border-0 bg-b-2 rounded-0 rounded-bottom" aria-labelledby="programDropdownMenuLink">
+                        <ul class="dropdown-menu border-0 bg-b-2  rounded-0 rounded-bottom" aria-labelledby="programDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Expositions</a></li>
                             <li><a class="dropdown-item" href="#">Visites</a></li>
                             <li><a class="dropdown-item" href="#">Rencontres</a></li>
@@ -47,19 +47,19 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Actualités</a>
+                        <a class="nav-link text-h1 text-md-p" href="#">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Musée</a>
+                        <a class="nav-link text-h1 text-md-p" href="#">Musée</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center justify-content-center flex-row">
 
                     <!-- subsectionActions : caché sur mobile -->
-                    <li class="nav-item d-none d-md-initial">
+                    <li class="nav-item d-none d-md-block">
                         {% include components/themeBtn.html %}
                     </li>
-                    <li class="nav-item d-none d-md-initial dropstart">
+                    <li class="nav-item d-none d-md-block dropstart">
                         <a class="" href="#" id="programDropdownMenuLink" role="button" aria-expanded="false">
                             {% include components/searchBtn.html %}
                         </a>
