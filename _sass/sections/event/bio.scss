@@ -4,13 +4,13 @@
         margin-bottom: -2rem;
         border-radius: 15px;
         display: flex;
-        height: 4rem;
+        height: 3.5rem;
         color: var(--s1);
     }
 
     @include media-breakpoint-up(md) { 
         .Bio-top{
-            margin-top: 7.25rem;
+            margin-top: 1rem;
         }
         
         .sylvanie-top{
@@ -23,10 +23,6 @@
     
         .para-top{
             margin-top: 2.5rem;
-        }
-        
-        .bio-img-desktop{
-            margin-top: 7.25rem;
         }
     }
 
