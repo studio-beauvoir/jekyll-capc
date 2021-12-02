@@ -23,6 +23,12 @@
         position:relative;
     }
 
+    .brinHistoire_content {
+        @include media-breakpoint-up(md) {
+            border-left: 3px solid var(--s-1);
+        }
+    }
+
     .histoire_deco{
         position: absolute;
         top: -4.375rem;
