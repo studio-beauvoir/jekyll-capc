@@ -95,6 +95,8 @@ $utilities: map-merge(
 
 @import "vendors/bootstrap";
 
+
+// theme text-color, background-color, border-color...
 @each $stateClass, $stateSelector in $states {
 
     @each $themeName, $themeColors in $themes {
@@ -115,6 +117,65 @@ $utilities: map-merge(
         
                 .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important }
             }
+        }
+    }
+}
+
+
+
+$spacerDirections: (
+    'l': '-left',
+    'r': '-right',
+);
+$spacerTypes: (
+    'm': 'margin',
+    'p': 'padding',
+);
+
+// margin for containers
+// logique:
+// margin-left = margin-right = (100vw-$largeurContainer)/2 - $container-padding-x
+// AAAAAAAAAAAAAAAAAH CA MARCHE
+
+@each $spacerTypeName, $spacerTypeProp in $spacerTypes {
+    @each $spacerDirName, $spacerDirProp in $spacerDirections {
+
+        .#{$spacerTypeName}-container { // x: left & right
+            #{$spacerTypeProp}-left: 0;
+            #{$spacerTypeProp}-right: 0;
+        }
+        .#{$spacerTypeName}#{$spacerDirName}-container {
+            #{$spacerTypeProp}#{$spacerDirProp}: 0;
+        }
+
+        .#{$spacerTypeName}-container-p { // x: left & right
+            #{$spacerTypeProp}-left: $container-padding-x;
+            #{$spacerTypeProp}-right: $container-padding-x;
+        }
+        .#{$spacerTypeName}#{$spacerDirName}-container-p {
+            #{$spacerTypeProp}#{$spacerDirProp}: $container-padding-x;
+        }
+
+        @each $containerBreakpoint, $containerWidth in $container-max-widths {
+
+            @include media-breakpoint-up($containerBreakpoint) {
+                .#{$spacerTypeName}-container { // x: left & right
+                    #{$spacerTypeProp}-left: calc( (100vw - #{$containerWidth}) / 2 );
+                    #{$spacerTypeProp}-right: calc( (100vw - #{$containerWidth}) / 2 );
+                }
+                .#{$spacerTypeName}#{$spacerDirName}-container {
+                    #{$spacerTypeProp}#{$spacerDirProp}: calc( (100vw - #{$containerWidth}) / 2 );
+                }
+    
+                .#{$spacerTypeName}-container-p { // x: left & right
+                    #{$spacerTypeProp}-left: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
+                    #{$spacerTypeProp}-right: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
+                }
+                .#{$spacerTypeName}#{$spacerDirName}-container-p {
+                    #{$spacerTypeProp}#{$spacerDirProp}: calc( (100vw - #{$containerWidth}) / 2 + #{$container-padding-x});
+                }
+            }
+            
         }
     }
 }

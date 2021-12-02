@@ -3,77 +3,63 @@
     <div class="container-fluid enCours bg-s-1"> <!-- En cours avec filtres-->  
         <div class="container">
             <h2>Évènements en cours</h2>
-            <h5 class="pb-2">Filtrer par type d’évènement</h5>
-
-            <ul class="enCoursFiltres mb-0 justify-content-between overflow-scroll d-flex gap-3 px-0 pb-4">
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">    
-                    {% include components/icons/stack.html %} 
-                    <p>Tout</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/panel.html %} 
-                    <p>Expositions</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/directions.html %} 
-                    <p>Visites</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/man.html %} 
-                    <p>Jeune Public</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/masks.html %} 
-                    <p>Performances</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/tableconf.html %} 
-                    <p>Conférences</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/men.html %} 
-                    <p>Rencontres</p>
-                </li>
-                <li class="btn text-b-1 bg-s-2 d-flex justify-content-between align-items-center">
-                    {% include components/icons/scroll.html %} 
-                    <p>Workshops</p>
-                </li>
-            </ul>
+            <h5 class="m-0">Filtrer par type d’évènement</h5>
         </div>
-        
     </div>
 
-    <div class="container">
-        <div class="enCoursCarrousel position: relative row d-flex">
-            <div class="col-8 col-lg-4">
-                <div class="enCoursCarrousel_card position-relative overflow-hidden card bg-transparent">
-                    <div class="enCours_overlay position-absolute top-0 start-0 border-radius-20 h-100 w-100"></div>
-                    <img src="/assets/img/club-poisson-lune.png" class="card-img-top" alt="Club du Poisson Lune">
-                    <div class="enCoursCarrousel_cardText py-5 px-4 position-absolute w-100 h-100 card-body">
-                        <div class="d-flex justify-content-between top-0 pb-4">
-                            <h5>Exposition</h5>
-                            <p>04.11.2021 → 26.03.2022</p>
-                        </div>
-                        <h4 class="text-s-3">Le club du poisson-lune</h4>
-                        <p class="position-absolute bottom_card">Création de 4 espaces ouverts à tous</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 col-lg-4">
-                <div class="enCoursCarrousel_card position-relative overflow-hidden card bg-transparent">
-                    <div class="enCours_overlay position-absolute top-0 start-0 border-radius-20 h-100 w-100"></div>
-                    <img src="/assets/img/absalon_absalon.jpg" class="card-img" alt="Absalon Absalon">
-                    <div class="enCoursCarrousel_cardText py-5 px-4 position-absolute w-100 h-100 card-body">
-                        <div class="d-flex justify-content-between top-0 pb-4">
-                            <h5>Exposition</h5>
-                            <p>04.11.2021 → 26.03.2022</p>    
-                        </div>
-                        <h4 class="text-s-3">Absalon Absalon</h4>
-                        <p class="position-absolute bottom_card">Exposition reprenant le travail interrompu de l'artiste Absalon</p>
-                    </div>
-                </div>
-            </div>
+    <ul class="enCoursFiltres pt-2 bg-s-1 p-container-p mb-0 justify-content-between overflow-scroll d-flex gap-3 pb-4">
+        {% include components/filter.html label="Tout" icon="stack" %}
+        {% include components/filter.html label="Expositions" icon="panel" %}
+        {% include components/filter.html label="Visites" icon="directions" %}
+        {% include components/filter.html label="Jeune public" icon="man" %}
+        {% include components/filter.html label="Performances" icon="masks" %}
+        {% include components/filter.html label="Conférences" icon="tableconf" %}
+        {% include components/filter.html label="Rencontres" icon="men" %}
+        {% include components/filter.html label="Workshops" icon="scroll" %}
+    </ul>
 
+    <div class="enCoursCarrouselContainer">
+        <div class="p-container-p  enCoursCarrousel d-flex flex-nowrap position:relative">
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/club-poisson-lune.png"
+                type="Exposition"
+                date="04.11.2021→26.03.2022"
+                titre="Le club du poisson-lune"
+                soustitre="Création de 4 espaces ouverts à tous"
+            %}
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/absalon_absalon.jpg"
+                type="Exposition"
+                date="24.06.2021→02.01.2022"
+                titre="Absalon Absalon"
+                soustitre="Exposition reprenant le travail interrompu de l'artiste Absalon"
+            %}
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/residence_artistes.jpg"
+                type="Exposition"
+                date="10.02.2021→31.12.2021"
+                titre="Résidence d'artistes"
+                soustitre="Nouveau programme de résidence de plusieurs artistes via un programme varié"
+            %}
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/espace_meditation.jpg"
+                type="Visite"
+                date="24.06.2021→02.01.2022"
+                titre="Espace de méditation"
+                soustitre="Invitation à l'introspection et au recentrement de chaque individu"
+            %}
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/atelier_a_emporter.png"
+                type="Workshop"
+                date="6.10.2021→15.12.2021"
+                titre="Atelier à emporter"
+                soustitre="En echo à l'exposition Absolon, prêt de l'atelier Cellula, à réaliser chez soi"
+            %}
         </div>
     </div>
 </section>
