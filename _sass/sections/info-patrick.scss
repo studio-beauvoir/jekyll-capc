@@ -1,5 +1,16 @@
 #infoPatrick {
 
+    .position-relative{
+        position:relative;
+    }
+
+    .deco-infos{
+        position:absolute;
+        bottom:-40%;
+        right:-70%;
+        z-index:-1;
+    }
+
     .bouton{
         border-radius: 15px;
         display: flex;
@@ -23,25 +34,25 @@
     }
     @include media-breakpoint-up(md){
         .bouton-mobile-color{
-            background-color: var(--s3);
+            background-color: var(--s-3);
         }
         svg{
-            color: var(--p2);
+            color: var(--p-2);
         }
         .texto{
-            color: var(--p2);
+            color: var(--p-2);
         }
     }
 
     @include media-breakpoint-down(md){
         .bouton-mobile-color{
-            background-color: var(--s2);
+            background-color: var(--s-2);
         }
         .texto{
-            color: var(--b1);
+            color: var(--b-1);
         }
         svg{
-            color: var(--b1);
+            color: var(--b-1);
         }
     }
 }
