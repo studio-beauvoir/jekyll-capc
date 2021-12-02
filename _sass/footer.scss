@@ -1,15 +1,5 @@
 #footer {
-    
-}
-
-html[data-theme="dark"] {
-    #footer {
-        span, a, .btn, svg {
-            color: var(--p1) !important;
-            &:hover {
-                color: var(--s1) !important;
-            }
-        }
-    
+    a {
+        text-decoration: none;
     }
 }
