@@ -31,9 +31,15 @@
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        object-fit: cover;
 
         .enCoursCarrousel_card {
             margin-bottom: 3rem;
+            width: 30rem;
+            height: auto;
+            grid-row: 1;
         }
 
         .enCours_overlay {
