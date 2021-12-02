@@ -41,35 +41,23 @@
     </div>
 
     <div class="container">
-        <div class="enCoursCarrousel position: relative row d-flex">
-            <div class="col-8 col-lg-4">
-                <div class="enCoursCarrousel_card position-relative overflow-hidden card bg-transparent">
-                    <div class="enCours_overlay position-absolute top-0 start-0 border-radius-20 h-100 w-100"></div>
-                    <img src="/assets/img/club-poisson-lune.png" class="card-img-top" alt="Club du Poisson Lune">
-                    <div class="enCoursCarrousel_cardText py-5 px-4 position-absolute w-100 h-100 card-body">
-                        <div class="d-flex justify-content-between top-0 pb-4">
-                            <h5>Exposition</h5>
-                            <p>04.11.2021→26.03.2022</p>
-                        </div>
-                        <h4 class="text-s-3">Le club du poisson-lune</h4>
-                        <p class="position-absolute bottom_card">Création de 4 espaces ouverts à tous</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 col-lg-4">
-                <div class="enCoursCarrousel_card position-relative overflow-hidden card bg-transparent">
-                    <div class="enCours_overlay position-absolute top-0 start-0 border-radius-20 h-100 w-100"></div>
-                    <img src="/assets/img/absalon_absalon.jpg" class="card-img" alt="Absalon Absalon">
-                    <div class="enCoursCarrousel_cardText py-5 px-4 position-absolute w-100 h-100 card-body">
-                        <div class="d-flex justify-content-between top-0 pb-4">
-                            <h5>Exposition</h5>
-                            <p>04.11.2021→26.03.2022</p>    
-                        </div>
-                        <h4 class="text-s-3">Absalon Absalon</h4>
-                        <p class="position-absolute bottom_card">Exposition reprenant le travail interrompu de l'artiste Absalon</p>
-                    </div>
-                </div>
-            </div>
+        <div class="enCoursCarrousel row d-flex flex-nowrap position:relative">
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/club-poisson-lune.png"
+                type="Exposition"
+                date="04.11.2021→26.03.2022"
+                titre="Le club du poisson-lune"
+                soustitre="Création de 4 espaces ouverts à tous"
+            %}
+            {% include 
+                components/card_carrousel.html 
+                img="/assets/img/absalon_absalon.jpg"
+                type="Exposition"
+                date="24.06.2022→02.01.2022"
+                titre="Absalon Absalon"
+                soustitre="Exposition reprenant le travail interrompu de l'artiste Absalon"
+            %}
 
         </div>
     </div>
