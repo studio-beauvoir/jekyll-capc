@@ -1,7 +1,15 @@
 <section class="container-fluid" id="hero">
 
     <div class="container pt-5 pb-5"> <!-- Introduction-->
-        <h1 class="text-center text-md-start text-s-1 pt-2 lh-1">Musée<br/><em class="fst-normal position-relative">d'art contemporain</em><br/> de Bordeaux</h1>
+        <div class="d-flex flex-column py-5 py-md-0">
+            <div class="mx-auto d-block d-md-none py-3">
+                {%
+                    include components/logo.html
+                    height='40'
+                %}
+            </div> 
+            <h1 class="text-center text-md-start text-s-1 pt-2 lh-1">Musée<br/><em class="fst-normal position-relative">d'art contemporain</em><br/> de Bordeaux</h1>
+        </div>
         <div class="col-7 pt-2">
             <p class="pt-5 pb-5 text-start d-none d-md-block text-p-1 lh-base">Situé dans le centre-ville de Bordeaux, le CAPC musée d’art contemporain rassemble 1600 pièces signées par plus de 200 artistes du monde entier.
             Cet établissement phare de la région bordelaise  offre une passerelle entre les expériences esthétiques de la fin du siècle dernier et les questionnements des artistes d'aujourd'hui.
@@ -9,7 +17,7 @@
         </div>
     </div>
 
-    <div class="container"> <!--Exposition à la Une-->
+    <div class="container heroUneContainer"> <!--Exposition à la Une-->
         <div class="row justify-content-center"> 
             <div class="col-12">
                 <div class="heroUne rounded-30 p-5 overflow-hidden d-flex flex-column">
