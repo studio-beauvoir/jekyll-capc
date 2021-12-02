@@ -41,6 +41,19 @@
         }
     }
 
+    .heroGraphics_une {
+        right:0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .heroGraphics_enCours {
+        left:0;
+        bottom: 0;
+        transform: translateY(75%);
+        position: absolute;
+    }
+
     .heroUne {
         position: relative;
         min-height: 40vw;
