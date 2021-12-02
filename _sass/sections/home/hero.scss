@@ -19,7 +19,9 @@
     }
 
     @include media-breakpoint-down(md) {
-        min-height: 70vw;
+        .heroUne {
+            min-height: 45vh !important;
+        }
     }
 
     .heroUne {
