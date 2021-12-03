@@ -4,6 +4,21 @@
         position:relative;
     }
 
+    .easter {
+        .easter_reveal {
+            display: none;
+        }
+
+        &:hover {
+            .easter_base {
+                display: none;
+            }
+            .easter_reveal {
+                display: inline;
+            }
+        }
+    }
+
     .deco-infos{
         position:absolute;
         bottom:-40%;
