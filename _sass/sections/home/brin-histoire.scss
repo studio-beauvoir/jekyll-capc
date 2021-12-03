@@ -26,6 +26,11 @@
     .brinHistoire_content {
         @include media-breakpoint-up(md) {
             border-left: 3px solid var(--s-1);
+
+            .brinHistoire_content > * {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
         }
     }
 
