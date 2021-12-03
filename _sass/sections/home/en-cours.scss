@@ -58,7 +58,7 @@
             transition: transform .1s;
             @include media-breakpoint-down(md) {
                 width: 80vw;
-                height: 95vw;
+                height: 55vh;
             }
 
             .incomingCard_overlay {

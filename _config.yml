@@ -1,11 +1,18 @@
-title: CAPC
-email: capc@capc.fr
+robots: all
+author: Studio Beauvoir
+lang: fr
+url: "https://capc.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+defaultTheme: light
+themeColor: "#F2F2F0"
+themeColorLight: "#F2F2F0"
+themeColorDark: "#27292C"
+keywords: 'capc, musée, art moderne bordeaux, exposition bordeaux, musée bordeaux centre'
+title: CAPC Bordeaux
+email: capc@mairie-bordeaux.fr
+adress: 7 rue Ferrere, 33000 Bordeaux
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Projet étudiant MMI Bordeaux (promo 2024)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 sass:
   style: compact
