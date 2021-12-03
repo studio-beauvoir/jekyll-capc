@@ -110,20 +110,20 @@ $utilities: map-merge(
     @each $themeName, $themeColors in $themes {
         html[data-theme="#{$themeName}"] {
             @each $colorName, $color in $themeColors {
-                .#{$stateClass}bg-#{$colorName}#{$stateSelector} { background-color: $color !important }
+                .#{$stateClass}bg-#{$colorName}#{$stateSelector} { background-color: $color !important; transition: background-color .3s; }
 
-                .#{$stateClass}text-#{$colorName}#{$stateSelector} { color: $color !important }
+                .#{$stateClass}text-#{$colorName}#{$stateSelector} { color: $color !important; transition: color .3s;}
                 
-                .#{$stateClass}border-#{$colorName}#{$stateSelector} { border-color: $color !important }
+                .#{$stateClass}border-#{$colorName}#{$stateSelector} { border-color: $color !important; border-color: color .3s;  }
             }
 
 
             @each $colorName, $color in $themeColors {
-                .#{$stateClass}bg-#{$colorName}--#{$themeName}Theme#{$stateSelector} { background-color: $color !important }
+                .#{$stateClass}bg-#{$colorName}--#{$themeName}Theme#{$stateSelector} { background-color: $color !important; transition: background-color .3s;  }
 
-                .#{$stateClass}text-#{$colorName}--#{$themeName}Theme#{$stateSelector} { color: $color !important }
+                .#{$stateClass}text-#{$colorName}--#{$themeName}Theme#{$stateSelector} { color: $color !important; transition: color .3s; }
         
-                .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important }
+                .#{$stateClass}border-#{$colorName}--#{$themeName}Theme#{$stateSelector} { border-color: $color !important; border-color: color .3s; }
             }
         }
     }
