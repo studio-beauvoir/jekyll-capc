@@ -34,6 +34,13 @@
         }
     }
 
+    .mrg-bot{
+        @include media-breakpoint-down(md){
+            margin-bottom: -3rem;
+            margin-top: 3rem;
+        }
+    }
+
     .brdr{
         @include media-breakpoint-up(md){
             border-top: 2px solid var(--s-1);
