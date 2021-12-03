@@ -58,12 +58,17 @@
 
     .deco-infos{
         position:absolute;
-        bottom: -55%;
-        right:-70%;
-        // overflow-y: hidden;
+        top: 25%;
+        left:70%;
+        @include media-breakpoint-down(md){
+            height: 2%;
+            top:60%;
+            left:60%;
+        }
     }
 
     .section-infos{
-        overflow:hidden;
+        overflow-x:visible;
+        position:relative;
     }
 }
