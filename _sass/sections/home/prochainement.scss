@@ -34,6 +34,12 @@
         }
     }
 
+    .brdr{
+        @include media-breakpoint-up(md){
+            border-top: 2px solid var(--s-1);
+        }
+    }
+
     .image-position{
         object-position: 0 45%;
     }
@@ -52,4 +58,10 @@
             flex-direction: row-reverse;
         }
     }
+
+    // .margin-mobile{
+    //     @media only screen and (max-width:768px){
+    //         margin-top:0;
+    //     }
+    // }
 }
