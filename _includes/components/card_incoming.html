@@ -1,4 +1,4 @@
-<div class="cardIncoming col-12 col-md-6 col-xl-6 margin_mobile_top {{include.border}}">
+<a href="{{include.href}}" class="text-decoration-none cardIncoming col-12 col-md-6 col-xl-6 margin_mobile_top {{include.border}}">
     <div class="cardIncomingInner d-flex justify-content-between align-items-center gap-5">
         <div class="d-flex img_prochainement {{include.class}}">
             <img class="img-fluid rounded-20" src="{{include.src}}" alt="{{include.alt}}">
@@ -10,7 +10,7 @@
                 <p class="text-p-2 m-0">{{ include.day }}</p>
             </div>
             <h4 class="text-s-1">{{include.title}}</h4>
-            <p class="m-0">{{include.description}}</p>
+            <p class="text-p-1 m-0">{{include.description}}</p>
         </div>
     </div>
-</div>
+</a>
