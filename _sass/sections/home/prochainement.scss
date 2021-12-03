@@ -34,6 +34,12 @@
         }
     }
 
+    .brdr{
+        @include media-breakpoint-up(md){
+            border-top: 2px solid var(--s-1);
+        }
+    }
+
     .image-position{
         object-position: 0 45%;
     }
