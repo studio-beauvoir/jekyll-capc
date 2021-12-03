@@ -34,7 +34,6 @@
             background: var(--s-1);
         }
     }
-
     @include media-breakpoint-down(md) {
         .heroUne {
             min-height: 45vh !important;

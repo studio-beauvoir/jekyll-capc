@@ -12,21 +12,27 @@
     }
 
     .bouton{
+        user-select: none;
         border-radius: 15px;
+        cursor: pointer;
         display: flex;
         height: 3rem;
-    }
+        transition: transform .2s;
 
-    .bouton > svg{
-        margin-left: 1rem;
-    }
+        &:active {
+            transform: scale(0.95);
+        }
 
-    .bouton> a{
-        text-decoration: none;
-    }
-    
-    .bouton > a:visited{
-        text-decoration: none;
+        > svg{
+            margin-left: 1rem;
+        }
+
+        > a{
+            text-decoration: none;
+            &:visited{
+                text-decoration: none;
+            }
+        }
     }
 
     .mrg{
@@ -58,12 +64,17 @@
 
     .deco-infos{
         position:absolute;
-        bottom: -55%;
-        right:-70%;
-        // overflow-y: hidden;
+        top: 25%;
+        left:70%;
+        @include media-breakpoint-down(md){
+            height: 2%;
+            top:60%;
+            left:60%;
+        }
     }
 
     .section-infos{
-        overflow:hidden;
+        overflow-x:visible;
+        position:relative;
     }
 }

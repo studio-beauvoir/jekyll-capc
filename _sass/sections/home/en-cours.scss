@@ -58,7 +58,7 @@
             transition: transform .1s;
             @include media-breakpoint-down(md) {
                 width: 80vw;
-                height: 95vw;
+                height: 55vh;
             }
 
             .incomingCard_overlay {
@@ -112,17 +112,18 @@
    
 
     .enCoursCarrousel::-webkit-scrollbar {
-        height: 0.7rem;
+        height: 0.8rem;
+        border-radius:10px;
       } 
     
     .enCoursCarrousel::-webkit-scrollbar-track { 
         background: var(--s-3);
-        // border-radius: 10px;
+        border-radius: 10px;
     }
     
     .enCoursCarrousel::-webkit-scrollbar-thumb { 
         background: var(--t-1);
-        // border-radius: 10px;
+        border-radius: 10px;
     }
     
     .enCoursCarrousel::-webkit-scrollbar-thumb:hover { 

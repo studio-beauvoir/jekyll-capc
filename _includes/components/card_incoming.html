@@ -1,16 +1,17 @@
-<div class="cardIncoming col-12 col-md-6 col-xl-6 margin_mobile_top {{include.border}}">
-    <div class="cardIncomingInner d-flex justify-content-between align-items-center">
+<a href="{{include.href}}" class="text-decoration-none cardIncoming col-12 col-md-6">
+    <div class="cardIncomingInner d-flex justify-content-between align-items-center gap-1 gap-md-4">
         <div class="d-flex img_prochainement {{include.class}}">
-            <img class="img-fluid rounded-20" src="{{include.src}}" alt="{{include.alt}}">
+            <img class="cardIncomingInner_img rounded-20 rounded-md-30" src="{{include.src}}" alt="{{include.alt}}">
         </div>
 
-        <div class="d-flex flex-column mw-auto mx-2">
+        <div class="d-flex flex-grow-1 h-100 flex-column mw-auto mx-2">
             <div class="d-flex justify-content-between">
                 <h5 class="mb-3 text-p-2">{{ include.type }}</h5>
-                <p class="text-p-2 m-0">{{ include.day }}</p>
+                <p class="text-p-2 m-0 d-none d-md-block">{{ include.day }}</p>
             </div>
-            <h4 class="text-s-1">{{include.title}}</h4>
-            <p class="m-0">{{include.description}}</p>
+            <h4 class="text-s-1 text-h2 text-md-h4">{{include.title}}</h4>
+            <p class="text-p-2 m-0 d-none d-md-block">{{include.description}}</p>
+            <p class="text-p-2 m-0 d-block d-md-none">Le {{ include.day }}</p>
         </div>
     </div>
-</div>
+</a>
