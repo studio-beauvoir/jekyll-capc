@@ -1,5 +1,5 @@
 #description{
-    margin-top: -20px;
+    margin-top: -30px;
     z-index: 2;
 
     .desc_img{
@@ -9,6 +9,22 @@
 
     .desc_tarif{
         background-color: var(--p-2);
+    }
+
+    .pos-graph{
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+    .pos-graph-1{
+        position: absolute;
+        right: 20%;
+        bottom: 5%;
+    }
+    .pos-graph-2{
+        position: absolute;
+        left: -6%;
+        top:0;
     }
     
 }
