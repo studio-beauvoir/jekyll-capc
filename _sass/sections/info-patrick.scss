@@ -12,6 +12,7 @@
     }
 
     .bouton{
+        user-select: none;
         border-radius: 15px;
         cursor: pointer;
         display: flex;
@@ -21,18 +22,17 @@
         &:active {
             transform: scale(0.95);
         }
-    }
 
-    .bouton > svg{
-        margin-left: 1rem;
-    }
+        > svg{
+            margin-left: 1rem;
+        }
 
-    .bouton> a{
-        text-decoration: none;
-    }
-    
-    .bouton > a:visited{
-        text-decoration: none;
+        > a{
+            text-decoration: none;
+            &:visited{
+                text-decoration: none;
+            }
+        }
     }
 
     .mrg{

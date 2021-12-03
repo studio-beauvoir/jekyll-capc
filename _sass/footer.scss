@@ -9,5 +9,11 @@
 
     .footerCursor > * {
         cursor: pointer;
+        width:max-content;
     }
+
+    .footerCursor > *:hover {
+        color:var(--t-1);
+    }
+
 }
