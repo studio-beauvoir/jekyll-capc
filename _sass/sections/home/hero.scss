@@ -57,7 +57,8 @@
 
     .heroUne {
         position: relative;
-        min-height: 40vw;
+        height: 80vh;
+        // max-height: 42rem;
         // margin-bottom: -25%; // situe l'image à la moitiée à cheval
         cursor: pointer;
         transition: transform .2s;

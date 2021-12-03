@@ -3512,7 +3512,7 @@ html[data-theme="dark"] { --p-1: #F2F2F0; --p-2: #D9D9D7; --p-3: #737372; --s-1:
 
 #hero .heroGraphics_enCours { left: 0; bottom: 0; transform: translate(-20%, 50%); position: absolute; z-index: 1; }
 
-#hero .heroUne { position: relative; min-height: 40vw; cursor: pointer; transition: transform .2s; user-select: none; z-index: 2; }
+#hero .heroUne { position: relative; height: 80vh; cursor: pointer; transition: transform .2s; user-select: none; z-index: 2; }
 
 #hero .heroUne .heroUne_overlay { left: 0; top: 0; height: 100%; width: 100%; position: absolute; background: linear-gradient(to right, rgba(0, 0, 0, 0.86) 20%, rgba(0, 0, 0, 0.1)); }
 
