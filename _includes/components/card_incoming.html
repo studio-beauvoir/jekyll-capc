@@ -1,4 +1,4 @@
-<div class="cardIncoming col-12 col-md-6">
+<a href="{{include.href}}" class="text-decoration-none cardIncoming col-12 col-md-6">
     <div class="cardIncomingInner d-flex justify-content-between align-items-center gap-1 gap-md-4">
         <div class="d-flex img_prochainement {{include.class}}">
             <img class="cardIncomingInner_img rounded-20" src="{{include.src}}" alt="{{include.alt}}">
@@ -10,8 +10,8 @@
                 <p class="text-p-2 m-0 d-none d-md-block">{{ include.day }}</p>
             </div>
             <h4 class="text-s-1 text-h2 text-md-h4">{{include.title}}</h4>
-            <p class="m-0 d-none d-md-block">{{include.description}}</p>
+            <p class="text-p-2 m-0 d-none d-md-block">{{include.description}}</p>
             <p class="text-p-2 m-0 d-block d-md-none">Le {{ include.day }}</p>
         </div>
     </div>
-</div>
+</a>
