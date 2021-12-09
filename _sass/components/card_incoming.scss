@@ -1,20 +1,29 @@
 .cardIncoming {
-    .cardIncomingInner_img {
+    &:hover .cardIncomingInner_img {
+        transform: scale(1.1);
+    }
+
+    .cardIncomingInner_imgContainer {
+        flex-grow: 0;
+        flex-shrink: 0;
         @include media-breakpoint-down(md){
             // width: 20%;
             width: 90px;
             height: 140px;
-            object-fit: cover;
-            object-position: center center;
         }
 
         @include media-breakpoint-up(md){
             width: 180px;
             height: 150px;
-            object-fit: cover;
-            object-position: center center;
             // object-position: 100% 0;
         }
-        
+    }
+
+    .cardIncomingInner_img {
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+        object-fit: cover;
+        object-position: center center;
     }
 }

@@ -3546,6 +3546,10 @@ html[data-theme="dark"] { --p-1: #F2F2F0; --p-2: #D9D9D7; --p-3: #737372; --s-1:
 
 #infoPatrick .bouton:active { transform: scale(0.95); }
 
+#infoPatrick .bouton:hover { background: var(--s-2); }
+
+#infoPatrick .bouton:hover * { color: var(--b-1) !important; }
+
 #infoPatrick .bouton > svg { margin-left: 1rem; }
 
 #infoPatrick .bouton > a { text-decoration: none; }

@@ -97,13 +97,17 @@
 
 #header span:hover, #header a:hover, #header .btn:hover, #header svg:hover { color: var(--t-1) !important; }
 
+#header a:hover, #header span:hover { text-decoration: underline !important; }
+
+#header svg:hover { transform: scale(1.1); }
+
 html[data-theme="dark"] #header span, html[data-theme="dark"] #header a, html[data-theme="dark"] #header .btn, html[data-theme="dark"] #header svg { color: var(--p-1) !important; }
 
 html[data-theme="dark"] #header span:hover, html[data-theme="dark"] #header a:hover, html[data-theme="dark"] #header .btn:hover, html[data-theme="dark"] #header svg:hover { color: var(--s-1) !important; }
 
-#footer a { text-decoration: none; color: var(--s-1); }
+#footer a, #footer label { text-decoration: none; color: var(--s-1); }
 
-#footer a:hover { color: var(--t-1); }
+#footer a:hover, #footer label:hover { color: var(--t-1); text-decoration: underline var(--t-1) !important; }
 
 #footer .footerPaddingBot { padding-bottom: 5rem; }
 

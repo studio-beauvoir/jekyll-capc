@@ -37,6 +37,12 @@
         &:active {
             transform: scale(0.95);
         }
+        &:hover {
+            background: var(--s-2);
+            * {
+                color: var(--b-1) !important;
+            }
+        }
 
         > svg{
             margin-left: 1rem;

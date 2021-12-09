@@ -6,7 +6,12 @@
             color: var(--t-1) !important;
         }
     }
-
+    a:hover, span:hover {
+        text-decoration: underline !important;
+    }
+    svg:hover {
+        transform: scale(1.1);
+    }
 }
 
 html[data-theme="dark"] {

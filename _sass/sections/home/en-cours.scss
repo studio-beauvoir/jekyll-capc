@@ -42,6 +42,18 @@
         }
     }
 
+    .filterBtn {
+        transition: .1s;
+        &:hover {
+            background: var(--s-3) !important;
+            color: var(--p-1) !important;
+            // transform: scale(1.05);
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
     .enCoursCarrousel {
         overflow-x: scroll;
         overflow-y: hidden;

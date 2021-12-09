@@ -1,10 +1,11 @@
 #footer {
-    a {
+    a, label {
         text-decoration: none;
         color: var(--s-1);
 
         &:hover {
             color: var(--t-1);
+            text-decoration: underline var(--t-1) !important;
         }
     }
 
